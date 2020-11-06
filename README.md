@@ -1,3 +1,6 @@
+[MIT]:http://opensource.org/licenses/MIT
+[wordpress]:http://wordpress.biaov.cn/
+
 # Wordpress
 
 一个使用 VuePress 搭建的个人博客 &#x1F44D;
@@ -56,9 +59,9 @@ npm build
 
 ## 演示地址
 
-* &#x1F449; [wordpress](http://wordpress.biaov.cn/)
+* &#x1F449; [wordpress]
 
 ## License
 
-* [MIT](http://opensource.org/licenses/MIT)
+* [MIT]
 * Copyright &#x00A9; 2020-present, TalkingData.
