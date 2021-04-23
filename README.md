@@ -1,8 +1,11 @@
+[MIT]:http://opensource.org/licenses/MIT
+[wordpress]:http://wordpress.biaov.cn/
+
 # Wordpress
 
-一个使用 VuePress 搭建的个人博客 &#x1F44D;
+一个使用 VuePress 搭建的个人博客 👍
 
-<h2 style="text-align:center;"><a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.0-blue" /></a></h2>
+<h2 style="text-align:center;"><a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.2-blue" /></a></h2>
 
 ## 使用
 
@@ -31,7 +34,7 @@ npm build
 ## 目录
 
 <details>
-<summary>&#x2705; 查看目录</summary>
+<summary>✅ 查看目录</summary>
 
 ```Markdown
 |-- wordpress -------------------- 项目名称
@@ -56,9 +59,9 @@ npm build
 
 ## 演示地址
 
-* &#x1F449; [wordpress](http://wordpress.biaov.cn/)
+* 👉 [wordpress]
 
 ## License
 
-* [MIT](http://opensource.org/licenses/MIT)
+* [MIT]
 * Copyright &#x00A9; 2020-present, TalkingData.
