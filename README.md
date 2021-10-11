@@ -5,7 +5,7 @@
 
 一个使用 VuePress 搭建的个人博客 👍
 
-<h2 style="text-align:center;"><a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.2-blue" /></a></h2>
+<h2 style="text-align:center;"><a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.3-blue" /></a></h2>
 
 ## 使用
 

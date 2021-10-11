@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a simple wordpress!",
   "main": "index.js",
   "scripts": {
