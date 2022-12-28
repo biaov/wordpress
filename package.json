@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/biaov/wordpress/issues"
   },
-  "homepage": "https://github.com/biaov/wordpress#readme",
+  "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
     "less": "^3.12.2",
     "less-loader": "^7.0.2",

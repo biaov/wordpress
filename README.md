@@ -1,6 +1,3 @@
-[MIT]:http://opensource.org/licenses/MIT
-[wordpress]:http://wordpress.biaov.cn/
-
 # Wordpress
 
 一个使用 VuePress 搭建的个人博客 👍
