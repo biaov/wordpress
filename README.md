@@ -5,7 +5,10 @@
 
 一个使用 VuePress 搭建的个人博客 👍
 
-<h2 style="text-align:center;"><a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.3-blue" /></a></h2>
+<h2 style="text-align:center;">
+    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.3-blue" /></a>
+    <a href="https://github.com/biaov/wordpress/blob/master/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
+</h2>
 
 ## 使用
 
@@ -57,11 +60,6 @@ npm build
 
 </details>
 
-## 演示地址
+## 贡献者
 
-* 👉 [wordpress]
-
-## License
-
-* [MIT]
-* Copyright &#x00A9; 2020-present, TalkingData.
+[![贡献者](https://contrib.rocks/image?repo=biaov/wordpress)](https://github.com/biaov/wordpress/graphs/contributors)
