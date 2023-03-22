@@ -8,7 +8,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ncu": "ncu --configFileName .ncurc.json && npm i"
+    "ncu": "ncu --configFileName .ncurc.json && npm i",
+    "prettier": "prettier --write '**/*.{js,less,md,json}'"
   },
   "repository": {
     "type": "git",
