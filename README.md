@@ -1,12 +1,8 @@
 <h1 align="center"><font color="#ff4d4f">此分支不再维护</font></h1>
 
-<style>
-.red-text {
-  color: red;
-}
-</style>
+<span class="text-red">这是红色文本</span>
 
-<span class="red-text">这是红色文本</span>
+:red_circle: 这是红色文本
 
 # Wordpress
 
