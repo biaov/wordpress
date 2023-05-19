@@ -1,4 +1,9 @@
-<h1 align="center" style="color: #ff4d4f;">此分支不再维护</h1>
+<style type="text/css">
+    .danger{
+        color:#ff4d4f;
+    }
+</style>
+<h1 align="center" class="danger">此分支不再维护</h1>
 
 # Wordpress
 
