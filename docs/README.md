@@ -43,9 +43,3 @@ npm start
 ```Basic
 npm run build
 ```
-
-### 上传服务器
-
-```Basic
-npm run upload
-```
