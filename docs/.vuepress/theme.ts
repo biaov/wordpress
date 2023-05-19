@@ -5,14 +5,13 @@ import { resolve } from 'path'
 const files = readdirSync(resolve(__dirname, '../blog'))
 
 // 目录配置
-const children = Array.from(new Array(files.length - 1), (_, i) => {
-  const num = i + 1
-  return num < 10 ? '0' + num : String(num)
-})
-children.reverse()
+const children = Array.from({ length: files.length - 1 }, (_, i) => `${i < 9 ? 0 : ''}${i + 1}`).reverse()
+
 // 配置文件
 const config: DefaultThemeOptions = {
   logo: '/logo.svg',
+  lastUpdatedText: '更新时间',
+  contributorsText: '贡献者们',
   navbar: [
     {
       text: '首页',
@@ -43,14 +42,12 @@ const config: DefaultThemeOptions = {
     '/blog/': [
       {
         text: '首页',
-        link: '/',
-        collapsible: true
+        link: '/'
       },
       {
         text: '博文',
         link: '/blog/',
-        children,
-        collapsible: true
+        children
       }
     ]
   }

@@ -11,19 +11,19 @@
 
 ### 安装
 
-```Basic
+```sh
 npm i
 ```
 
 ### 运行
 
-```Basic
+```sh
 npm start
 ```
 
 ### 打包
 
-```Basic
+```sh
 npm build
 ```
 
@@ -36,7 +36,7 @@ npm build
 <details>
 <summary>✅ 点击查看</summary>
 
-```Markdown
+```md
 |-- wordpress -------------------- 项目名称
     |-- .gitignore --------------- git忽略文件
     |-- package-lock.json -------- 依赖地址信息
