@@ -1,6 +1,6 @@
 # Wordpress
 
-一个使用 VuePress 搭建的个人博客 👍
+一个基于 `vuepress@1.x` 搭建的个人博客 👍
 
 <h2 align="center">
     <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.3-blue" /></a>

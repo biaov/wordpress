@@ -1,0 +1,42 @@
+<template><div><h1 id="vue-cli3-0-的一些小技巧" tabindex="-1"><a class="header-anchor" href="#vue-cli3-0-的一些小技巧" aria-hidden="true">#</a> Vue/cli3.0 的一些小技巧</h1>
+<h2 id="目录" tabindex="-1"><a class="header-anchor" href="#目录" aria-hidden="true">#</a> 目录</h2>
+<nav class="table-of-contents"><ul><li><router-link to="#目录">目录</router-link><ul><li><router-link to="#一、env-全局变量">一、env 全局变量</router-link></li><li><router-link to="#二、配置-npm-start-及自动打开浏览器">二、配置 npm start 及自动打开浏览器</router-link></li><li><router-link to="#三、配置-eslint">三、配置 eslint</router-link></li></ul></li></ul></nav>
+<blockquote>
+<p>vue/cli3.0 比起 vue/cli2.*来说，最明显的区别就是简化了两个文件，一个是 build 文件和 config 文件。vue/cli3.0 把这两个文件的配置写进了 node_modules 里面去了。不过有些时候我们也需要配置一些适合自己项目开发的东西，所以我们可以把自己的相关配置写入 vue.config.js 文件中。（这个文件需要自己在 src 同目录下新建，下面统一说成根目录）</p>
+</blockquote>
+<p><img src="https://img-blog.csdn.net/20180929160640187" alt="img">
+介绍一下今天要分享的小技巧。</p>
+<p><strong>env 全局变量，配置 npm start 及自动打开浏览器，配置 eslint。</strong></p>
+<h3 id="一、env-全局变量" tabindex="-1"><a class="header-anchor" href="#一、env-全局变量" aria-hidden="true">#</a> 一、env 全局变量</h3>
+<ol>
+<li><strong>在根目录下新建.env 文件</strong>
+<img src="https://img-blog.csdn.net/20180929162403351" alt="img"></li>
+<li><strong>存值：VUE<em>APP</em>变量名=变量值</strong>。
+<img src="https://img-blog.csdn.net/20180929162628890" alt="img"></li>
+<li><strong>取值：process.env.变量名</strong>。
+<img src="https://img-blog.csdn.net/20180929163044862" alt="img"></li>
+</ol>
+<h3 id="二、配置-npm-start-及自动打开浏览器" tabindex="-1"><a class="header-anchor" href="#二、配置-npm-start-及自动打开浏览器" aria-hidden="true">#</a> 二、配置 npm start 及自动打开浏览器</h3>
+<p>vue/cli3.0 和 vue/cli2.*，这里运行命令改变，原来是 npm run dev（npm start），现在是 npm run dev。所以我们如果想用原来的 npm start 的话，需要在 package.json 里进行配置。至于为什么要配置，无他，命令短（我们知道其实 npm start 是 npm run start 的简写），能不用记的单词，尽量不去记，但是运行原理一定要知道，为什么可以这样用，一定要知道。</p>
+<p>在 package.json 里的 script 属性里输入命令。</p>
+<p><img src="https://img-blog.csdn.net/20180929165429228" alt="img"></p>
+<p>至于为什么要自动打开浏览器，因为省去第一次运行可以不用去打开浏览器输入网址。</p>
+<p>默认是不能打开自动打开浏览器的，大概是因为每次输入 npm start 运行都会出现一个新窗口吧！</p>
+<p>我们知道 Alt+Tab 键是窗口切换，其实 window7 的 window+Tab 键可以炫酷切换窗口（虽然速度慢）</p>
+<p><img src="https://img-blog.csdn.net/20180929170149919" alt="img"></p>
+<p><img src="https://img-blog.csdn.net/20180929170502369" alt="img"></p>
+<h3 id="三、配置-eslint" tabindex="-1"><a class="header-anchor" href="#三、配置-eslint" aria-hidden="true">#</a> <strong>三、配置 eslint</strong></h3>
+<p>eslint 是一种代码规范，可以减小错误，以及提高团队之间的协作能力。这里有两种方法进行配置：</p>
+<ol>
+<li>.eslintrc.js 文件进行配置
+a. 在根目录下新建.eslintrc.js 文件进行配置。最后附上所有的配置解释代码。
+<img src="https://img-blog.csdn.net/20180929163750501" alt="img"></li>
+<li>package.json 进行配置。
+a. 如果你在使用 vue/cli3.0 创建项目时选择了 eslint 那么在你的 package.json 里就有 eslintConfig 属性。在 rules 里进行配置。
+b. 小提示：json 文件里不能写注释哦！</li>
+</ol>
+<p><img src="https://img-blog.csdn.net/20180929164126389" alt="img">
+<a href="http://eslint.cn/docs/rules/" target="_blank" rel="noopener noreferrer">全部的 eslint 配置<ExternalLinkIcon/></a></p>
+</div></template>
+
+
