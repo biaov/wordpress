@@ -1,4 +1,4 @@
 {
   "upgrade": true,
-  "reject": ["less", "less-loader"]
+  "reject": []
 }

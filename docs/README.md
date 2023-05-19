@@ -3,8 +3,13 @@ home: true
 heroImage: /logo.svg
 heroText: 个人博客
 tagline: 这是一个使用 VuePress 来搭建的个人博客。
-actionText: 查看博客 →
-actionLink: /blog/
+actions:
+  - text: 查看博客 →
+    link: /blog/
+    type: primary
+  - text: Github →
+    link: https://github.com/biaov/wordpress
+    type: secondary
 features:
   - title: 简介明了
     details: 一个很简单的 DMEO，相信以你的实力可以快速的看懂。

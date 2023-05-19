@@ -11,11 +11,3 @@
 那些文章可能存在不足之处，欢迎来提 [Issues](https://github.com/biaov/wordpress/issues)
 
 :::
-
-<style lang="less">
-.sidebar-group a.sidebar-link{
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-</style>

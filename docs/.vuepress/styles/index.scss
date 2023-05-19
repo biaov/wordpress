@@ -1,0 +1,15 @@
+.sidebar-item {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background: #3eaf7c !important;
+}
