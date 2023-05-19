@@ -4,7 +4,7 @@
 
 <h2 align="center">
     <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-1.0.3-blue" /></a>
-    <a href="https://github.com/biaov/wordpress/blob/master/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
+    <a href="https://github.com/biaov/wordpress/blob/main/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
 </h2>
 
 ## 使用
