@@ -31,10 +31,7 @@ npm build
 
 > Markdown + VuePress
 
-## 目录
-
-<details>
-<summary>✅ 点击查看</summary>
+## 目录结构
 
 ```md
 |-- wordpress -------------------- 项目名称
@@ -53,7 +50,11 @@ npm build
         |-- |-- README.md -------- blog的根目录
 ```
 
-</details>
+## 依赖解析
+
+- `vuepress`: Vue 驱动的静态网站生成器
+- `@vuepress/plugin-search`: 本地搜索器
+- `@vuepress/plugin-docsearch`: doc 搜索器
 
 ## 贡献者们
 

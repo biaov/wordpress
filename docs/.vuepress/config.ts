@@ -1,4 +1,6 @@
 import { defineUserConfig, defaultTheme, UserConfig } from 'vuepress'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { searchPlugin } from '@vuepress/plugin-search'
 import theme from './theme'
 
 const config: UserConfig = {
@@ -11,7 +13,23 @@ const config: UserConfig = {
   ],
   host: '0.0.0.0',
   port: 8888,
-  theme: defaultTheme(theme)
+  theme: defaultTheme(theme),
+  plugins: [
+    // docsearchPlugin({
+    //   apiKey: '',
+    //   indexName: '',
+    //   appId: 'wordpress',
+    //   placeholder: '搜索文档',
+    //   disableUserPersonalization: false
+    // })
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索文档'
+        }
+      }
+    })
+  ]
 }
 
 export default defineUserConfig(config)
