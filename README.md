@@ -1,3 +1,5 @@
+<h1 align="center" style="color: #ff4d4f;">此分支不再维护</h1>
+
 # Wordpress
 
 一个基于 `vuepress@1.x` 搭建的个人博客 👍
