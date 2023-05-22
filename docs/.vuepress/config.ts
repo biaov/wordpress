@@ -15,20 +15,20 @@ const config: UserConfig = {
   port: 8888,
   theme: defaultTheme(theme),
   plugins: [
-    // docsearchPlugin({
-    //   apiKey: '',
-    //   indexName: '',
-    //   appId: 'wordpress',
-    //   placeholder: '搜索文档',
-    //   disableUserPersonalization: false
-    // })
-    searchPlugin({
-      locales: {
-        '/': {
-          placeholder: '搜索文档'
-        }
-      }
+    docsearchPlugin({
+      appId: '',
+      apiKey: '',
+      indexName: 'wordpress-biaov',
+      placeholder: '搜索文档',
+      disableUserPersonalization: false
     })
+    // searchPlugin({
+    //   locales: {
+    //     '/': {
+    //       placeholder: '搜索文档'
+    //     }
+    //   }
+    // })
   ]
 }
 
