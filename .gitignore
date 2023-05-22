@@ -3,3 +3,4 @@ dist/
 .cache
 .temp
 .git/
+data.md
