@@ -20,7 +20,17 @@ const config: UserConfig = {
       apiKey: '3d6885e93c565ea65973e95efdb29595',
       indexName: 'wordpress-biaov',
       placeholder: '搜索文档',
-      disableUserPersonalization: false
+      disableUserPersonalization: false,
+      locales: {
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档'
+            }
+          }
+        }
+      }
     })
     // searchPlugin({
     //   locales: {
