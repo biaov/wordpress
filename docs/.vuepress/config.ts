@@ -16,8 +16,8 @@ const config: UserConfig = {
   theme: defaultTheme(theme),
   plugins: [
     docsearchPlugin({
-      appId: '',
-      apiKey: '',
+      appId: 'J4IXB1KJHT',
+      apiKey: '3d6885e93c565ea65973e95efdb29595',
       indexName: 'wordpress-biaov',
       placeholder: '搜索文档',
       disableUserPersonalization: false
