@@ -3,7 +3,7 @@
 一个基于 `vuepress@2.x` 搭建的个人博客 👍
 
 <h2 align="center">
-    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.0.1-blue" /></a>
+    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.0.2-blue" /></a>
     <a href="https://github.com/biaov/wordpress/blob/main/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
 </h2>
 
@@ -46,8 +46,8 @@ npm build
         |   |-- config.ts -------- 配置文件
         |-- |-- public ----------- 资源目录
         |   |-- styles ----------- 样式文件
-        |-- blog ----------------- 博客文章目录
-        |-- |-- README.md -------- blog的根目录
+        |-- docs ----------------- 博客文章目录
+        |-- |-- README.md -------- docs 的根目录
 ```
 
 ## 依赖解析

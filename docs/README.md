@@ -5,7 +5,7 @@ heroText: 个人博客
 tagline: 一个基于 `vuepress@2.x` 搭建的个人博客
 actions:
   - text: 查看博客 →
-    link: /blog/
+    link: /docs/
     type: primary
   - text: 源码地址 →
     link: https://github.com/biaov/wordpress

@@ -2,7 +2,7 @@ import { DefaultThemeOptions } from 'vuepress'
 import { readdirSync } from 'fs'
 import { resolve } from 'path'
 
-const files = readdirSync(resolve(__dirname, '../blog'))
+const files = readdirSync(resolve(__dirname, '../docs'))
 
 // 目录配置
 const children = Array.from({ length: files.length - 1 }, (_, i) => `${i < 9 ? 0 : ''}${i + 1}`).reverse()
@@ -23,7 +23,7 @@ const config: DefaultThemeOptions = {
       children: [
         {
           text: '我的博客',
-          link: '/blog/'
+          link: '/docs/'
         },
         {
           text: 'CSDN',
@@ -39,14 +39,14 @@ const config: DefaultThemeOptions = {
     }
   ],
   sidebar: {
-    '/blog/': [
+    '/docs/': [
       {
         text: '首页',
         link: '/'
       },
       {
         text: '博文',
-        link: '/blog/',
+        link: '/docs/',
         children
       }
     ]
