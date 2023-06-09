@@ -17,7 +17,7 @@ const config: UserConfig = {
   plugins: [
     docsearchPlugin({
       appId: 'J4IXB1KJHT',
-      apiKey: '3d6885e93c565ea65973e95efdb29595',
+      apiKey: 'bf1bfbfae3d460e0a5b4f5e7c9515ef2',
       indexName: 'wordpress-biaov',
       placeholder: '搜索文档',
       disableUserPersonalization: false,

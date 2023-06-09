@@ -27,8 +27,8 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.62",
-    "@vuepress/plugin-search": "^2.0.0-beta.62",
-    "vuepress": "^2.0.0-beta.62"
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.63",
+    "@vuepress/plugin-search": "^2.0.0-beta.63",
+    "vuepress": "^2.0.0-beta.63"
   }
 }
