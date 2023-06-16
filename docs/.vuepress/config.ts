@@ -1,6 +1,5 @@
 import { defineUserConfig, defaultTheme, UserConfig } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { searchPlugin } from '@vuepress/plugin-search'
 import theme from './theme'
 
 const config: UserConfig = {
@@ -41,8 +40,8 @@ const config: UserConfig = {
                 noRecentSearchesText: '暂无内容',
                 saveRecentSearchButtonTitle: '保存',
                 removeRecentSearchButtonTitle: '移除历史记录',
-                favoriteSearchesTitle: '关注',
-                removeFavoriteSearchButtonTitle: '移除关注'
+                favoriteSearchesTitle: '收藏',
+                removeFavoriteSearchButtonTitle: '移除收藏'
               },
               errorScreen: {
                 titleText: '错误',
@@ -69,13 +68,6 @@ const config: UserConfig = {
         }
       }
     })
-    // searchPlugin({
-    //   locales: {
-    //     '/': {
-    //       placeholder: '搜索文档'
-    //     }
-    //   }
-    // })
   ]
 }
 
