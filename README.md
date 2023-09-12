@@ -3,7 +3,7 @@
 一个基于 `vuepress@2.x` 搭建的个人博客 👍
 
 <h2 align="center">
-    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.0.3-blue" /></a>
+    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.0.5-blue" /></a>
     <a href="https://github.com/biaov/wordpress/blob/main/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
 </h2>
 
@@ -53,7 +53,6 @@ npm build
 ## 依赖解析
 
 - `vuepress`: Vue 驱动的静态网站生成器
-- `@vuepress/plugin-search`: 本地搜索器
 - `@vuepress/plugin-docsearch`: doc 搜索器
 
 ## 贡献者们
