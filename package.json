@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "This is a simple wordpress!",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,12 @@
     "url": "git+https://github.com/biaov/wordpress.git"
   },
   "keywords": [
-    "VuePress",
-    "Markdown",
-    "Vue",
-    "Wordpress"
+    "vite",
+    "vuepress",
+    "markdown",
+    "vue",
+    "wordpress",
+    "bolg"
   ],
   "author": "biaov <biaov@qq.com>",
   "license": "ISC",
