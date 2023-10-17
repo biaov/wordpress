@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="/">
-        <img src="../assets/logo.svg" width="200px" title="mineh5ui" alt="mineh5ui">
+        <img src="https://mineh5ui.biaov.cn/v2/logo.svg" width="200px" title="mineh5ui" alt="mineh5ui">
     </a>
 </p>
 <h2 align="center">mine-h5-ui</h2>
