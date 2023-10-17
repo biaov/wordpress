@@ -1,5 +1,6 @@
 import { defineUserConfig, defaultTheme, UserConfig } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 import theme from './theme'
 
 const config: UserConfig = {
@@ -67,7 +68,8 @@ const config: UserConfig = {
           }
         }
       }
-    })
+    }),
+    shikiPlugin({ theme: 'dark-plus' })
   ]
 }
 
