@@ -7,6 +7,9 @@ actions:
   - text: 查看博客 →
     link: /docs/
     type: primary
+  - text: mine-h5-ui →
+    link: /mine-h5-ui/
+    type: secondary
   - text: 源码地址 →
     link: https://github.com/biaov/wordpress
     type: secondary
