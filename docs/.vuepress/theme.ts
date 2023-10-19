@@ -6,7 +6,7 @@ import mineh5ui from './mineh5ui'
 /**
  * docs 文件夹
  */
-const children = readdirSync(resolve(__dirname, '../docs')).filter(item => item !== 'README.md')
+const children = readdirSync(resolve(__dirname, '../docs')).filter(item => item !== 'README.md').reverse()
 
 /**
  * 配置文件
