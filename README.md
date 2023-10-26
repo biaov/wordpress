@@ -29,7 +29,7 @@ npm build
 
 ## 技术栈
 
-> Markdown + VuePress
+- `Markdown` + `VuePress@2.x` + `TypeScript`
 
 ## 目录结构
 
