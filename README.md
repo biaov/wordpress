@@ -33,7 +33,7 @@ npm build
 
 ## 目录结构
 
-```md
+```MD
 |-- wordpress -------------------- 项目名称
     |-- .gitignore --------------- git忽略文件
     |-- package-lock.json -------- 依赖地址信息

@@ -1,14 +1,14 @@
 {
   "name": "wordpress",
   "version": "2.3.0",
-  "description": "This is a simple wordpress!",
-  "main": "index.js",
+  "description": "这是一个简单的博客网站😂",
   "scripts": {
     "start": "npm run dev",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "ncu": "ncu --configFileName .ncurc.json && npm i",
-    "prettier": "prettier --write '**/*.{js,less,md,json}'"
+    "prettier": "prettier --write '**/*.{js,less,md,json}'",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
