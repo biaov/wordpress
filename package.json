@@ -1,8 +1,7 @@
 {
   "name": "wordpress",
-  "version": "2.3.0",
-  "description": "This is a simple wordpress!",
-  "main": "index.js",
+  "version": "2.3.1",
+  "description": "这是一个简单的博客网站😂",
   "scripts": {
     "start": "npm run dev",
     "dev": "vuepress dev docs",

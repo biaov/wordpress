@@ -3,7 +3,7 @@
 一个基于 `vuepress@2.x` 搭建的个人博客 👍
 
 <h2 align="center">
-    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.3.0-blue" /></a>
+    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.3.1-blue" /></a>
     <a href="https://github.com/biaov/wordpress/blob/main/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
 </h2>
 
@@ -33,7 +33,7 @@ npm build
 
 ## 目录结构
 
-```md
+```MD
 |-- wordpress -------------------- 项目名称
     |-- .gitignore --------------- git忽略文件
     |-- package-lock.json -------- 依赖地址信息
