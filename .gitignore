@@ -3,3 +3,5 @@ dist/
 .cache
 .temp
 .git/
+.log
+zip
