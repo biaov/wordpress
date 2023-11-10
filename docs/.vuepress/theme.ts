@@ -41,8 +41,8 @@ const config: DefaultThemeOptions = {
       target: '_blank'
     },
     {
-      text: '其它案例',
-      ariaLabel: '其它案例',
+      text: '案例集锦',
+      ariaLabel: '案例集锦',
       children: [
         {
           text: 'Github 源码',
@@ -76,6 +76,11 @@ const config: DefaultThemeOptions = {
             {
               text: '多命令简化 mine-auto-cli',
               link: 'https://github.com/biaov/mine-auto-cli',
+              target: '_blank'
+            },
+            {
+              text: '特效集锦 effects',
+              link: 'https://github.com/biaov/effects',
               target: '_blank'
             }
           ]
