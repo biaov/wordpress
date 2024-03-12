@@ -3,8 +3,8 @@
 一个基于 `vuepress@2.x` 搭建的个人博客 👍
 
 <h2 align="center">
-    <a href="http://wordpress.biaov.cn/"><img src="https://img.shields.io/badge/npm-2.4.0-blue" /></a>
-    <a href="https://github.com/biaov/wordpress/blob/main/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" /></a>
+    <a href="http://wordpress.biaov.cn/"><img src="https://shields.io/github/v/release/biaov/wordpress.svg?logo=github&label=版本" alt="version" /></a>
+    <a href="https://github.com/biaov/wordpress/blob/main/LICENSE"><img src="https://img.shields.io/github/license/biaov/wordpress.svg" alt="LICENSE" /></a>
 </h2>
 
 ## 使用
