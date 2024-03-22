@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "这是一个简单的博客网站😂",
   "scripts": {
     "start": "npm run dev",
@@ -22,7 +22,10 @@
     "wordpress",
     "bolg"
   ],
-  "author": "biaov <biaov@qq.com>",
+  "author": {
+    "name": "biaov",
+    "email": "biaov@qq.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/biaov/wordpress/issues"
