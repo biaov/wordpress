@@ -1,14 +1,14 @@
 {
   "name": "wordpress",
-  "version": "2.6.0",
+  "version": "3.0.0",
   "description": "这是一个简单的博客网站😂",
   "scripts": {
     "start": "npm run dev",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
     "ncu": "ncu --configFileName .ncurc.json && npm i",
-    "prettier": "prettier --write '**/*.{js,less,md,json}'",
-    "preview": "vite preview"
+    "prettier": "prettier --write '**/*.{js,less,md,json}'"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "vite",
+    "vitepress",
     "vuepress",
     "markdown",
     "vue",
@@ -32,8 +33,6 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-rc.0",
-    "@vuepress/plugin-shiki": "^2.0.0-rc.0",
-    "vuepress": "^2.0.0-rc.0"
+    "vitepress": "^1.0.1"
   }
 }

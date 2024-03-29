@@ -1,6 +1,6 @@
 # Wordpress
 
-一个基于 `vuepress@2.x` 搭建的个人博客 👍
+一个基于 `vitepress` 搭建的个人博客 👍
 
 <h2 align="center">
     <a href="http://wordpress.biaov.cn/"><img src="https://shields.io/github/v/release/biaov/wordpress.svg?logo=github&label=version" alt="version" /></a>
