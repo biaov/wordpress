@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeActionSheet } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeActionSheet.css'
 
-const app = createApp(App)
-app.use(MeActionSheet)
-app.mount('#app')
+createApp(App).use(MeActionSheet).mount('#app')
 ```
 
 :::
@@ -40,8 +38,14 @@ app.mount('#app')
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const visible = ref(false) // 动作面板的显示状态
-// 列表数据
+/**
+ * 动作面板的显示状态
+ */
+const visible = ref(false)
+
+/**
+ * 列表数据
+ */
 const listData = ref([
   {
     id: 1,

@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeIndexBar } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeIndexBar.css'
 
-const app = createApp(App)
-app.use(MeIndexBar)
-app.mount('#app')
+createApp(App).use(MeIndexBar).mount('#app')
 ```
 
 :::
@@ -33,15 +31,18 @@ app.mount('#app')
 ::: CopyCode
 
 ```vue
-<template>
-  <me-index-bar @click="onClick"></me-index-bar>
-</template>
 <script lang="ts" setup>
-// 点击内容列表
+/**
+ * 点击内容列表
+ */
 const onClick = item => {
   console.log(item)
 }
 </script>
+
+<template>
+  <me-index-bar @click="onClick" />
+</template>
 ```
 
 :::
@@ -53,7 +54,7 @@ const onClick = item => {
 ::: CopyCode
 
 ```js
-;[
+export default [
   {
     name: 'A',
     cities: [{ code: 'AR', cn: '阿根廷' }]

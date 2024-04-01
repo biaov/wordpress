@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeScreenshot } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeScreenshot.css'
 
-const app = createApp(App)
-app.use(MeScreenshot)
-app.mount('#app')
+createApp(App).use(MeScreenshot).mount('#app')
 ```
 
 :::
@@ -32,20 +30,27 @@ app.mount('#app')
 ::: CopyCode
 
 ```vue
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+/**
+ * 截图状态
+ */
+const start = ref(false)
+
+/**
+ * 点击截图
+ */
+const onClick = () => {
+  start.value = true
+}
+</script>
+
 <template>
   <me-screenshot v-bind="{ start }">
     <p @click="onClick">点击截图</p>
   </me-screenshot>
 </template>
-<script lang="ts" setup>
-import { ref } from 'vue'
-
-let start = ref(false) // 截图状态
-// 点击截图
-const onClick = () => {
-  start = true
-}
-</script>
 ```
 
 :::
@@ -56,21 +61,10 @@ const onClick = () => {
 
 ::: CopyCode
 
-```vue
-<template>
-  <me-screenshot v-bind="{ start }" allow-down>
-    <p @click="onClick">点击截图</p>
-  </me-screenshot>
-</template>
-<script lang="ts" setup>
-import { ref } from 'vue'
-
-const start = ref(false) // 截图状态
-// 点击截图
-const onClick = () => {
-  start.value = true
-}
-</script>
+```html
+<me-screenshot v-bind="{ start }" allow-down>
+  <p @click="onClick">点击截图</p>
+</me-screenshot>
 ```
 
 :::

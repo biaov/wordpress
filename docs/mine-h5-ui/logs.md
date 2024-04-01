@@ -14,7 +14,85 @@
 
 :::TimeLine
 
-## v2.7.0-Latest release
+## v2.8.2 - 最新版本
+
+`2024-03-12`
+
+- ⚙️ 更新依赖版本
+- 🔥 增加安装依赖时 Node 版本校验
+- 🔥 增加 logo 动画
+- 🔥 增加 npm provenance
+- 🔥 增加 github actions publish.yml
+- 🔥 增加 `@rollup/rollup-linux-x64-gnu` 依赖用于支持 linux 环境
+
+## v2.8.1
+
+`2024-03-05`
+
+- 🔥 新增组件
+  - [新增引导组件](/v2/doc/guide)
+  - [新增悬浮按钮组件](/v2/doc/floatButton)
+  - [新增骨架屏组件](/v2/doc/skeleton)
+- 新增组合式 API
+  - [新增 useScroll](/v2/doc/composable)
+- 🔥 新增开发指南(/v2/doc/develop)
+- ⚙️ 更新
+  - 手风琴组件 MeAccordionItem 增加 `slot=label` 插槽
+  - 更新组件的使用文档
+  - 优化项目在使用组件或组合式 API 时由 getCurrentInstance 中获取改为直接从组件库获取的体验
+  - 更新项目依赖版本
+  - 组合式 API `useVisible` 增加初始化参数
+  - 简化文档里的按需引入方式
+  - 优化单元测试获取节点
+  - 更新依赖 `vue-tsc` 由 `1.x` 升级为 `2.x`
+- 🐞 修复已知 BUG
+  - 修复 MeLoading 组件设置大小不生效问题
+  - 修复移动端点击出现蓝色背景问题
+
+## v2.7.3
+
+`2024-02-20`
+
+- 🔥 新增
+  - 新增组合式 API `useStorage` 用于操作 `localStorage` 和 `sessionStorage`
+- ⚙️ 更新
+  - 更新依赖
+    - 更新 `@typescript-eslint/eslint-plugin` 至 `v7.x`
+    - 更新 `@typescript-eslint/parser` 至 `v7.x`
+    - 更新 `gulp-postcss` 至 `v10.x`
+    - 更新 `shiki` 至 `v10.x`
+  - 完善文档
+  - 🐞 修复已知 BUG
+
+## v2.7.2
+
+`2023-11-20`
+
+- 优化
+  - 调整 Markdown 文件 a 标签的样式右 `primary` 主题色改为 `success` 主题色
+  - 调整项目支持 ESM 配置 `{ "type": "module" }`
+- 更新
+  - 更新依赖版本
+    - 更新 `vite@5.x`
+  - 更新 NodeJs Engines 版本至 `v20.x`
+
+## v2.7.1
+
+`2023-10-20`
+
+- Markdown 主题更改
+  - 主题由 `highlight.js` 改为 `shiki`，更好的样式支持
+  - 插件 `vite-plugin-vue-markdown` 更新为 `unplugin-vue-markdown`
+- 优化代码
+  - 调整组合式 API useVisible 的返回值，由 `{ visible, setVisible }` 改为 `[visible, setVisible]`，以便于自定义命名
+  - 优化项目代码注释
+  - 新增 .vscode 推荐扩展，以便于更好的开发
+  - 简化 docs 文档标签
+- Bug Fixes
+  - 处理已知 BUG
+  - 更新依赖版本
+
+## v2.7.0
 
 `2023-10-07`
 
@@ -288,11 +366,5 @@
 - Bug Fixes
   - 修复已知 Bug
   - 优化代码
-
-## v1.x
-
-`0000-00-00`
-
-- [查看文档](https://mineh5ui.biaov.cn/)
 
 :::

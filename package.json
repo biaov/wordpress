@@ -23,6 +23,7 @@
     "wordpress",
     "bolg"
   ],
+  "type": "module",
   "author": {
     "name": "biaov",
     "email": "biaov@qq.com"
@@ -33,6 +34,7 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
+    "@types/node": "^20.12.2",
     "vitepress": "^1.0.1"
   }
 }

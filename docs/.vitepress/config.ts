@@ -1,18 +1,10 @@
 import { defineConfig } from 'vitepress'
-import { readdirSync } from 'fs'
-import { resolve } from 'path'
-import mineh5ui from './mineh5ui.mjs'
-import { search } from './search.mjs'
-
-/**
- * docs 文件夹
- */
-const items = readdirSync(resolve(__dirname, '../docs'))
-  .filter(item => item !== 'README.md')
-  .reverse()
+import mineh5ui from './mineh5ui'
+import { search } from './search'
+import docs from './docs'
 
 export default defineConfig({
-  lang: 'zh-CN',
+  title: 'wordpress',
   base: '/',
   themeConfig: {
     logo: '/logo.svg',
@@ -91,16 +83,13 @@ export default defineConfig({
       '/docs/': [
         {
           text: '博文',
-          items: [
-            { text: '主页', link: '/docs/' },
-            { text: 'VueJs 打包', link: '/docs/01' }
-          ]
+          items: docs({ text: '主页', link: '/docs/' })
         }
       ],
       '/mine-h5-ui/': [
         {
           text: 'mine-h5-ui',
-          items: [{ text: '主页', link: '/mine-h5-ui/' }, ...mineh5ui]
+          items: mineh5ui({ text: '主页', link: '/mine-h5-ui/' })
         }
       ]
     },

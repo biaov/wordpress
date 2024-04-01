@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeForm } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeForm.css'
 
-const app = createApp(App)
-app.use(MeForm)
-app.mount('#app')
+createApp(App).use(MeForm).mount('#app')
 ```
 
 :::
@@ -42,16 +40,32 @@ app.mount('#app')
   </me-form>
 </template>
 <script lang="ts" setup>
-import { getCurrentInstance, ref } from 'vue'
+import { ref } from 'vue'
+import { useValidator } from 'mine-h5-ui'
 
-const { $Validator } = getCurrentInstance().appContext.config.globalProperties
-// 表单数据
+const validator = useValidator()
+
+/**
+ * 表单数据
+ */
 const form = ref({
-  username: '', // 用户名
-  password: '', // 密码
-  sms: '' // 短信验证码
+  /**
+   * 用户名
+   */
+  username: '',
+  /**
+   * 密码
+   */
+  password: '',
+  /**
+   * 短信验证码
+   */
+  sms: ''
 })
-// 规则
+
+/**
+ * 规则
+ */
 const rules = Object.freeze([
   {
     type: 'username',
@@ -60,7 +74,7 @@ const rules = Object.freeze([
   },
   {
     type: 'password',
-    pattern: $Validator.validPwd,
+    pattern: validator.password,
     message: '密码必须为6-12位数字+字母组合'
   },
   {
@@ -69,12 +83,15 @@ const rules = Object.freeze([
     message: '短信验证码只能是4位纯数字'
   }
 ])
-// 点击提交按钮
+
+/**
+ * 点击提交按钮
+ */
 const onSubmit = ({ valid, message, value }) => {
-  // 判断是否通过校验
-  if (valid) {
-    console.log(value) // 通过校验的值
-  }
+  /**
+   * 判断是否通过校验
+   */
+  valid && console.log(value)
 }
 </script>
 ```

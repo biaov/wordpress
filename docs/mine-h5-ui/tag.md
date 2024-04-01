@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeTag } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeTag.css'
 
-const app = createApp(App)
-app.use(MeTag)
-app.mount('#app')
+createApp(App).use(MeTag).mount('#app')
 ```
 
 :::
@@ -32,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-tag type="primary"></me-tag>
+<me-tag type="primary" />
 ```
 
 :::
@@ -44,7 +42,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-tag type="success" plain></me-tag>
+<me-tag type="success" plain />
 ```
 
 :::
@@ -59,7 +57,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-tag :width="100" :height="40" :radius="20" color="#6DA1F0"></me-tag>
+<me-tag :width="100" :height="40" :radius="20" color="#6DA1F0" />
 ```
 
 :::
@@ -72,7 +70,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-tag text="注意" text-color="rgba(255,255,255,0.6)"></me-tag>
+<me-tag text="注意" text-color="rgba(255,255,255,0.6)" />
 ```
 
 :::
@@ -84,7 +82,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-tag type="danger" closeable></me-tag>
+<me-tag type="danger" closeable />
 ```
 
 :::

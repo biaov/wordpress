@@ -7,7 +7,7 @@
     "removeComments": true,
     "sourceMap": true,
     "esModuleInterop": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext"],
     "skipLibCheck": true,
     "types": ["node"],
     "baseUrl": "./",
@@ -23,6 +23,6 @@
     /* 校验 */
     "strict": true
   },
-  "include": ["docs/.vuepress/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["docs/.vitepress/**/*.ts", "docs/utils.ts"],
+  "exclude": ["node_modules","cache"]
 }

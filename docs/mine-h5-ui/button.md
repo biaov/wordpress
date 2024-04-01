@@ -1,7 +1,5 @@
 # Button 按钮
 
-`mine-h5-ui` 常用的操作按钮。
-
 ---
 
 ## 按需引入
@@ -14,9 +12,7 @@ import App from './App.vue'
 import { MeButton } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeButton.css'
 
-const app = createApp(App)
-app.use(MeButton)
-app.mount('#app')
+createApp(App).use(MeButton).mount('#app')
 ```
 
 :::

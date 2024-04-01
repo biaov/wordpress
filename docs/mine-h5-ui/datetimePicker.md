@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeDatetimePicker } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeDatetimePicker.css'
 
-const app = createApp(App)
-app.use(MeDatetimePicker)
-app.mount('#app')
+createApp(App).use(MeDatetimePicker).mount('#app')
 ```
 
 :::
@@ -32,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-datetime-picker type="date" v-model="value" :visible="true"></me-datetime-picker>
+<me-datetime-picker type="date" v-model="value" :visible="true" />
 ```
 
 :::
@@ -44,7 +42,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-datetime-picker type="year-month" v-model="value" :visible="true"></me-datetime-picker>
+<me-datetime-picker type="year-month" v-model="value" :visible="true" />
 ```
 
 :::
@@ -56,7 +54,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-datetime-picker type="month-day" v-model="value" :visible="true"></me-datetime-picker>
+<me-datetime-picker type="month-day" v-model="value" :visible="true" />
 ```
 
 :::
@@ -68,7 +66,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-datetime-picker type="time" v-model="value" :visible="true"></me-datetime-picker>
+<me-datetime-picker type="time" v-model="value" :visible="true" />
 ```
 
 :::
@@ -80,7 +78,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-datetime-picker type="datetime" v-model="value" :visible="true"></me-datetime-picker>
+<me-datetime-picker type="datetime" v-model="value" :visible="true" />
 ```
 
 :::
@@ -92,7 +90,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-datetime-picker type="datetime" v-model="value" :visible="true" :min-date="" :max-date=""></me-datetime-picker>
+<me-datetime-picker type="datetime" v-model="value" :visible="true" :min-date="" :max-date="" />
 ```
 
 :::
