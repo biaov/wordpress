@@ -45,7 +45,14 @@ createApp(App).use(MeInput).mount('#app')
 <me-input v-model="inputValue" label="用户名" label-width="78px" placeholder="请输入用户名" />
 <me-input v-model="inputValue" label="整数" label-width="78px" placeholder="请输入整数" :digit="true" />
 <me-input v-model="inputValue" label="颜色自定" label-width="78px" label-color="#f60" placeholder="请输入文本" />
-<me-input v-model="inputValue" label="图标" label-width="78px" label-color="#ec632f" label-icon="icon-star" placeholder="请输入文本" />
+<me-input
+  v-model="inputValue"
+  label="图标"
+  label-width="78px"
+  label-color="#ec632f"
+  label-icon="icon-star"
+  placeholder="请输入文本"
+/>
 ```
 
 :::
@@ -87,7 +94,14 @@ createApp(App).use(MeInput).mount('#app')
 
 ```html
 <me-input v-model="inputValue" sms-msg="短信验证码" :sms-is="false" />
-<me-input v-model="inputValue" sms-msg="短信验证码" sms-is="icon-close" sms-color="#549ff2" placeholder="自定义验证码颜色" @click-sms="handleSMS" />
+<me-input
+  v-model="inputValue"
+  sms-msg="短信验证码"
+  sms-is="icon-close"
+  sms-color="#549ff2"
+  placeholder="自定义验证码颜色"
+  @click-sms="handleSMS"
+/>
 ```
 
 :::

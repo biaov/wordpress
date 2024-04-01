@@ -1,8 +1,8 @@
-import { readdirSync, readFileSync } from 'fs'
+import { readdirSync } from 'fs'
 import { resolve } from 'path'
 import type { DefaultTheme } from 'vitepress'
-import { getTitle } from '../utils'
-import type { ConfigItem } from '../types'
+import { getTitle } from '../../utils'
+import type { ConfigItem } from '../../types'
 
 /**
  * 前缀
@@ -12,7 +12,7 @@ let prefixURL: string
 export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
   prefixURL = item.link
 
-  const allDirs = readdirSync(resolve(import.meta.dirname, '../docs'), { withFileTypes: true })
+  const allDirs = readdirSync(resolve(import.meta.dirname, '../../docs'), { withFileTypes: true })
   const config = allDirs
     .reverse()
     .filter(dirent => dirent.name !== 'index.md')

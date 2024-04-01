@@ -47,7 +47,14 @@ createApp(App).use(MeMspaint).mount('#app')
 ::: CopyCode
 
 ```html
-<me-mspaint width="260px" height="200px" background="#000" border-style="5px dashed #f60" stroke-style="#fff" line-width="3" />
+<me-mspaint
+  width="260px"
+  height="200px"
+  background="#000"
+  border-style="5px dashed #f60"
+  stroke-style="#fff"
+  line-width="3"
+/>
 ```
 
 :::

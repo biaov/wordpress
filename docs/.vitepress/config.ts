@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
-import mineh5ui from './mineh5ui'
 import { search } from './search'
-import docs from './docs'
+import sidebar from './sidebar'
 
 export default defineConfig({
   title: 'wordpress',
@@ -79,20 +78,7 @@ export default defineConfig({
         ]
       }
     ],
-    sidebar: {
-      '/docs/': [
-        {
-          text: '博文',
-          items: docs({ text: '主页', link: '/docs/' })
-        }
-      ],
-      '/mine-h5-ui/': [
-        {
-          text: 'mine-h5-ui',
-          items: mineh5ui({ text: '主页', link: '/mine-h5-ui/' })
-        }
-      ]
-    },
+    sidebar,
     editLink: {
       pattern: 'https://github.com/biaov/wordpress/docs/:path',
       text: '在 GitHub 上编辑此页面'
@@ -106,13 +92,13 @@ export default defineConfig({
       next: '下一页'
     },
     outline: {
-      label: '页面导航'
+      label: '目录'
     },
     lastUpdated: {
-      text: '最后更新于',
+      text: '更新时间',
       formatOptions: {
         dateStyle: 'short',
-        timeStyle: 'medium'
+        timeStyle: 'short'
       }
     },
     langMenuLabel: '多语言',

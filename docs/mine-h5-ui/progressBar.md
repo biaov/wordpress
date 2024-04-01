@@ -68,7 +68,13 @@ const progress = ref(0)
 ::: CopyCode
 
 ```html
-<me-progress-bar v-model="progress" type="line" background="linear-gradient(90deg, #8af2ba, #1e57f5)" active-color="#f66" padding="0 25px" />
+<me-progress-bar
+  v-model="progress"
+  type="line"
+  background="linear-gradient(90deg, #8af2ba, #1e57f5)"
+  active-color="#f66"
+  padding="0 25px"
+/>
 ```
 
 :::

@@ -30,7 +30,10 @@ createApp(App).use(MeGuide).mount('#app')
 ::: CopyCode
 
 ```vue
-<me-guide visible :list="['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1']" />
+<me-guide
+  visible
+  :list="['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1']"
+/>
 ```
 
 :::
@@ -46,7 +49,10 @@ createApp(App).use(MeGuide).mount('#app')
 import { useVisible } from 'mine-h5-ui'
 
 const [visible, setVisible] = useVisible()
-const list = Object.freeze(['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1'])
+const list = Object.freeze([
+  'https://dummyimage.com/750x1334/f60/fff&text=1',
+  'https://dummyimage.com/750x1334/f60/fff&text=1'
+])
 </script>
 
 <template>

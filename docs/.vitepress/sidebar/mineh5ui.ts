@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import type { DefaultTheme } from 'vitepress'
-import { getTitle } from '../utils'
-import type { ConfigItem } from '../types'
+import { getTitle } from '../../utils'
+import type { ConfigItem } from '../../types'
 
 const config: ConfigItem[] = [
   {
@@ -85,11 +85,7 @@ let prefixURL: string
 
 const appendItems = (item: ConfigItem | string) => {
   if (typeof item === 'string') {
-    const aa = getTitle(resolve(import.meta.dirname, `../mine-h5-ui/${item}.md`), prefixURL + item)
-    if (item === 'drag') {
-      console.log(resolve(import.meta.dirname, `../mine-h5-ui/${item}.md`), aa, '---')
-    }
-    return aa
+    return getTitle(resolve(import.meta.dirname, `../../mine-h5-ui/${item}.md`), prefixURL + item)
   } else if (item.items) {
     item.items = item.items.map(appendItems) as ConfigItem[]
     return item

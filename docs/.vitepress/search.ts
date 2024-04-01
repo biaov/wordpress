@@ -5,7 +5,7 @@ import type { DefaultTheme } from 'vitepress'
  */
 export const search: DefaultTheme.Config['search'] = {
   provider: 'algolia',
-  options: {
+  options:{
     appId: 'J4IXB1KJHT',
     apiKey: 'dc49aef8f8c73afe86481f061d7ff175',
     indexName: 'wordpress-biaov',

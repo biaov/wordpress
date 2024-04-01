@@ -23,6 +23,6 @@
     /* 校验 */
     "strict": true
   },
-  "include": ["docs/.vitepress/**/*.ts", "docs/utils.ts"],
-  "exclude": ["node_modules","cache"]
+  "include": ["docs/**/*.ts", "docs/.vitepress/**/*.ts"],
+  "exclude": ["node_modules", "cache"]
 }
