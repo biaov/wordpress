@@ -1,7 +1,7 @@
 {
   "name": "wordpress",
   "version": "3.0.0",
-  "description": "这是一个简单的博客网站😂",
+  "description": "一个基于 `vitepress` 搭建的个人博客项目 👍",
   "scripts": {
     "start": "npm run dev",
     "dev": "vitepress dev docs",
@@ -17,11 +17,10 @@
   "keywords": [
     "vite",
     "vitepress",
-    "vuepress",
     "markdown",
     "vue",
     "wordpress",
-    "bolg"
+    "blog"
   ],
   "type": "module",
   "author": {

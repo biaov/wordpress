@@ -3,10 +3,16 @@ import { search } from './search'
 import sidebar from './sidebar'
 
 export default defineConfig({
-  title: 'wordpress',
+  title: 'WordPress',
   base: '/',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'referrer', content: 'no-referrer' }]
+  ],
+  ignoreDeadLinks: true,
   themeConfig: {
     logo: '/logo.svg',
+    socialLinks: [{ icon: 'github', link: 'https://github.com/biaov/wordpress' }],
     lastUpdatedText: '更新时间',
     nav: [
       {
