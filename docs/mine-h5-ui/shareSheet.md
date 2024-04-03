@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeShareSheet } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeShareSheet.css'
 
-const app = createApp(App)
-app.use(MeShareSheet)
-app.mount('#app')
+createApp(App).use(MeShareSheet).mount('#app')
 ```
 
 :::
@@ -41,8 +39,14 @@ app.mount('#app')
       <ul class="list-all">
         <li v-for="it in item.list" :key="it.id" @click="onClick(it)">
           <span v-text="it.value"></span>
-          <me-icon name="icon-right1" size="20px" color="#ccc"></me-icon>
-          <me-share-sheet v-model:visible="it.visible" :list="it.list" tips="立即分享给好友" @change="onChange" @cancel="onCancel"></me-share-sheet>
+          <me-icon name="icon-right1" size="20px" color="#ccc" />
+          <me-share-sheet
+            v-model:visible="it.visible"
+            :list="it.list"
+            tips="立即分享给好友"
+            @change="onChange"
+            @cancel="onCancel"
+          ></me-share-sheet>
         </li>
       </ul>
     </li>
@@ -52,6 +56,9 @@ app.mount('#app')
 import { ref } from 'vue'
 import { MeToast } from 'mine-h5-ui'
 
+/**
+ * 分享面板数据
+ */
 const listData = ref([
   {
     id: 1,
@@ -97,15 +104,24 @@ const listData = ref([
     ]
   }
 ])
-// 点击列表项
+
+/**
+ * 点击列表项
+ */
 const onClick = item => {
   item.visible = false
 }
-// 点击分享面板列表
+
+/**
+ * 点击分享面板列表
+ */
 const onChange = item => {
   MeToast(JSON.stringify(item))
 }
-// 点击分享面板取消按钮
+
+/**
+ * 点击分享面板取消按钮
+ */
 const onCancel = () => {
   MeToast('你点击了取消按钮')
 }

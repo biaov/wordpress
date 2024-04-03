@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeCountTo } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeCountTo.css'
 
-const app = createApp(App)
-app.use(MeCountTo)
-app.mount('#app')
+createApp(App).use(MeCountTo).mount('#app')
 ```
 
 :::
@@ -32,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-count-to :end-value="6666"></me-count-to>
+<me-count-to :end-value="6666" />
 ```
 
 :::
@@ -45,7 +43,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-count-to :start-value="100" :end-value="6666" :duration="5000"></me-count-to>
+<me-count-to :start-value="100" :end-value="6666" :duration="5000" />
 ```
 
 :::
@@ -57,7 +55,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-count-to :start-value="100" :end-value="6666" thousand></me-count-to>
+<me-count-to :start-value="100" :end-value="6666" thousand />
 ```
 
 :::

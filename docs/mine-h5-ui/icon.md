@@ -2,8 +2,6 @@
 
 ---
 
-`mine-h5-ui` 常用的图标。
-
 ## 按需引入
 
 ::: CopyCode
@@ -14,9 +12,7 @@ import App from './App.vue'
 import { MeIcon } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeIcon.css'
 
-const app = createApp(App)
-app.use(MeIcon)
-app.mount('#app')
+createApp(App).use(MeIcon).mount('#app')
 ```
 
 :::
@@ -26,19 +22,30 @@ app.mount('#app')
 - 如果你觉得重新编写 HTML 结构麻烦，可以直接复制下面的代码，也可以点击右侧的图标实现复制效果。
 - 右侧演示里最下面有 `mine-h5-ui` 的所有图标，你可以点击直接复制即可。
 
-## 使用 Iconfont-阿里巴巴矢量图标库
+## 使用 Iconfont 阿里巴巴矢量图标库
 
-- 引入你的[Iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)的项目。
+- 引入你的 [IconFont - 阿里巴巴矢量图标库](https://www.iconfont.cn/) 的项目。
 - 设置 `name` 属性即可。
+
+- 引入 iconfont 图标
 
 ::: CopyCode
 
 ```js
-// 引入iconfont图标
-import '//at.alicdn.com/t/font_1774902_nar195smdvf.css' // 线上地址，也可以使用线下文件
+/**
+ * 线上地址, 此地址有可能已过期, 推荐使用线下文件
+ */
+import '//at.alicdn.com/t/font_1774902_nar195smdvf.css'
+```
 
-// 使用iconfont图标
-;<me-icon name="icon-close"></me-icon>
+:::
+
+- 使用 iconfont 图标
+
+::: CopyCode
+
+```html
+<me-icon name="icon-close" />
 ```
 
 :::
@@ -65,9 +72,9 @@ import '//at.alicdn.com/t/font_1774902_nar195smdvf.css' // 线上地址，也可
 ::: CopyCode
 
 ```html
-<me-icon name="icon-warning1" color="#e6a23c"></me-icon>
-<me-icon name="icon-Danger" color="#f56c6c"></me-icon>
-<me-icon name="icon-Success" color="#67c23a"></me-icon>
+<me-icon name="icon-warning1" color="#e6a23c" />
+<me-icon name="icon-Danger" color="#f56c6c" />
+<me-icon name="icon-Success" color="#67c23a" />
 ```
 
 :::
@@ -79,9 +86,9 @@ import '//at.alicdn.com/t/font_1774902_nar195smdvf.css' // 线上地址，也可
 ::: CopyCode
 
 ```html
-<me-icon name="icon-tuichu" size="16px"></me-icon>
-<me-icon name="icon-tuichu" size="20px"></me-icon>
-<me-icon name="icon-tuichu" size="24px"></me-icon>
+<me-icon name="icon-tuichu" size="16px" />
+<me-icon name="icon-tuichu" size="20px" />
+<me-icon name="icon-tuichu" size="24px" />
 ```
 
 :::

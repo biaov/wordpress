@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeCountDown } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeCountDown.css'
 
-const app = createApp(App)
-app.use(MeCountDown)
-app.mount('#app')
+createApp(App).use(MeCountDown).mount('#app')
 ```
 
 :::
@@ -32,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-count-down :time="2*60*60*1000"></me-count-down>
+<me-count-down :time="2*60*60*1000" />
 ```
 
 :::
@@ -44,7 +42,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-count-down :time="2*60*60*1000" format="hh:mm:ss:ms"></me-count-down>
+<me-count-down :time="2*60*60*1000" format="hh:mm:ss:ms" />
 ```
 
 :::
@@ -63,9 +61,9 @@ app.mount('#app')
 
 #### Slots
 
-| 具名插槽 | 说明     | scopedSlots                | 版本   |
-| -------- | -------- | -------------------------- | ------ |
-| default  | 默认名称 | { hh: "", ms: "", ss: "" } | v2.0.0 |
+| 具名插槽 | 说明     | scopedSlots                  | 版本   |
+| -------- | -------- | ---------------------------- | ------ |
+| default  | 默认名称 | `{ hh: "", ms: "", ss: "" }` | v2.0.0 |
 
 ### 方法
 

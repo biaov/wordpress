@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeAddressPicker } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeAddressPicker.css'
 
-const app = createApp(App)
-app.use(MeAddressPicker)
-app.mount('#app')
+createApp(App).use(MeAddressPicker).mount('#app')
 ```
 
 :::
@@ -32,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-address-picker v-model="value" :visible="true"></me-address-picker>
+<me-address-picker v-model="value" :visible="true" />
 ```
 
 :::
@@ -44,7 +42,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-address-picker v-model="value" :visible="true"></me-address-picker>
+<me-address-picker v-model="value" :visible="true" />
 ```
 
 :::

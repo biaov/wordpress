@@ -13,10 +13,7 @@ import { MeTab, MeTabItem } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeTab.css'
 import 'mine-h5-ui/styles/MeTabItem.css'
 
-const app = createApp(App)
-app.use(MeTab)
-app.use(MeTabItem)
-app.mount('#app')
+createApp(App).use(MeTab).use(MeTabItem).mount('#app')
 ```
 
 :::
@@ -35,16 +32,14 @@ app.mount('#app')
 ::: CopyCode
 
 ```vue
-<template>
-  <me-tab v-model="active" @change="onChange">
-    <me-tab-item v-for="item in listData" :key="item.id" :name="item.id" :label="item.label" v-text="item.content"></me-tab-item>
-  </me-tab>
-</template>
 <script lang="ts" setup>
 import { ref } from 'vue'
 
 const active = ref(0)
-// 列表数据
+
+/**
+ * 列表数据
+ */
 const listData = ref([
   {
     id: 1,
@@ -67,11 +62,26 @@ const listData = ref([
     content: '内容四'
   }
 ])
-// 当标签栏改变时
+
+/**
+ * 当标签栏改变时
+ */
 const onChange = index => {
   console.log(`活动项${index}`)
 }
 </script>
+
+<template>
+  <me-tab v-model="active" @change="onChange">
+    <me-tab-item
+      v-for="item in listData"
+      :key="item.id"
+      :name="item.id"
+      :label="item.label"
+      v-text="item.content"
+    ></me-tab-item>
+  </me-tab>
+</template>
 ```
 
 :::

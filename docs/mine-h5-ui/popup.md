@@ -2,8 +2,6 @@
 
 ---
 
-`mine-h5-ui` 常用的弹出层。
-
 ## 按需引入
 
 ::: CopyCode
@@ -14,9 +12,7 @@ import App from './App.vue'
 import { MePopup } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MePopup.css'
 
-const app = createApp(App)
-app.use(MePopup)
-app.mount('#app')
+createApp(App).use(MePopup).mount('#app')
 ```
 
 :::
@@ -34,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-popup v-model:visible="false"></me-popup>
+<me-popup v-model:visible="false" />
 ```
 
 :::
@@ -46,10 +42,10 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-popup v-model:visible="false" position="top"></me-popup>
-<me-popup v-model:visible="false" position="right"></me-popup>
-<me-popup v-model:visible="false" position="bottom"></me-popup>
-<me-popup v-model:visible="false" position="left"></me-popup>
+<me-popup v-model:visible="false" position="top" />
+<me-popup v-model:visible="false" position="right" />
+<me-popup v-model:visible="false" position="bottom" />
+<me-popup v-model:visible="false" position="left" />
 ```
 
 :::
@@ -61,7 +57,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-popup v-model:visible="false" :closeable="true"></me-popup>
+<me-popup v-model:visible="false" :closeable="true" />
 ```
 
 :::
@@ -73,7 +69,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-popup v-model:visible="false" position="bottom" radius="6px"></me-popup>
+<me-popup v-model:visible="false" position="bottom" radius="6px" />
 ```
 
 :::

@@ -6,14 +6,17 @@
 
 ::: CopyCode
 
-```js
+```ts
 import { createApp } from 'vue'
 import App from './App.vue'
 import { MeAPI } from 'mine-h5-ui'
 
 const app = createApp(App)
 app.mount('#app')
-// ctx 里插入 API
+
+/**
+ * ctx 里插入 API
+ */
 Object.keys(MeAPI).forEach(key => {
   app.config.globalProperties[`$${key}`] = (API as any)[key]
 })
@@ -33,13 +36,16 @@ Object.keys(MeAPI).forEach(key => {
 
 ```vue
 <script lang="ts" setup>
-import { getCurrentInstance } from 'vue'
+import { useValidator } from 'mine-h5-ui'
 
-const { $Validator } = getCurrentInstance().appContext.config.globalProperties
-const valid = $Validator.validPhone // 获取规则
-console.log(valid) // /^1[3456789]\d{9}$/
-console.log(valid.test(18888888888)) // true
-console.log(valid.test(12888888888)) // false
+const validator = useValidator()
+/**
+ * 获取规则
+ */
+const valid = validator.phone
+console.log(valid) // 输出: /^1[3456789]\d{9}$/
+console.log(valid.test(18888888888)) // 输出: true
+console.log(valid.test(12888888888)) // 输出: false
 </script>
 ```
 

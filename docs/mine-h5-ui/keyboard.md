@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeKeyboard } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeKeyboard.css'
 
-const app = createApp(App)
-app.use(MeKeyboard)
-app.mount('#app')
+const app = createApp(App).use(MeKeyboard).mount('#app')
 ```
 
 :::
@@ -32,7 +30,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-keyboard v-model:visible="isShow"></me-keyboard>
+<me-keyboard v-model:visible="isShow" />
 ```
 
 :::
@@ -44,8 +42,7 @@ app.mount('#app')
 ::: CopyCode
 
 ```html
-<me-keyboard v-model:visible="isShow" skin-type="gray"></me-keyboard>
-<me-keyboard v-model:visible="isShow" skin-type="dark"></me-keyboard>
+<me-keyboard v-model:visible="isShow" skin-type="gray" /> <me-keyboard v-model:visible="isShow" skin-type="dark" />
 ```
 
 :::
@@ -56,20 +53,37 @@ app.mount('#app')
 
 ::: CopyCode
 
-```html
+```vue
 <template>
-  <me-keyboard v-model:visible="isShow" :skin-style="skinStyle"></me-keyboard>
+  <me-keyboard v-model:visible="isShow" :skin-style="skinStyle" />
 </template>
 <script lang="ts" setup>
-  import { ref } from 'vue'
+import { ref } from 'vue'
 
-  const isShow = ref(false) // 数字键盘显示状态
-  // 自定义样式
-  const skinStyle = Object.freeze({
-    background: 'linear-gradient(-45deg, #4bb0ff, #6149f6)', // 背景色
-    textBg: 'rgba(255,255,255,0.1)', // 按钮背景色
-    color: '#fff' // 按钮颜色
-  })
+/**
+ * 数字键盘显示状态
+ */
+const isShow = ref(false)
+
+/**
+ * 自定义样式
+ */
+const skinStyle = Object.freeze({
+  /**
+   * 背景色
+   */
+  background: 'linear-gradient(-45deg, #4bb0ff, #6149f6)',
+
+  /**
+   * 按钮背景色
+   */
+  textBg: 'rgba(255,255,255,0.1)',
+
+  /**
+   * 按钮颜色
+   */
+  color: '#fff'
+})
 </script>
 ```
 

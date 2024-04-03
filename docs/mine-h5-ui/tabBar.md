@@ -12,9 +12,7 @@ import App from './App.vue'
 import { MeTabBar } from 'mine-h5-ui'
 import 'mine-h5-ui/styles/MeTabBar.css'
 
-const app = createApp(App)
-app.use(MeTabBar)
-app.mount('#app')
+createApp(App).use(MeTabBar).mount('#app')
 ```
 
 :::
@@ -32,11 +30,10 @@ app.mount('#app')
 ::: CopyCode
 
 ```vue
-<template>
-  <me-tab-bar :list="listData"></me-tab-bar>
-</template>
 <script lang="ts" setup>
-// 列表数据
+/**
+ * 列表数据
+ */
 const listData = Object.freeze([
   {
     id: 1,
@@ -64,6 +61,10 @@ const listData = Object.freeze([
   }
 ])
 </script>
+
+<template>
+  <me-tab-bar :list="listData" />
+</template>
 ```
 
 :::
@@ -76,11 +77,10 @@ const listData = Object.freeze([
 ::: CopyCode
 
 ```vue
-<template>
-  <me-tab-bar :list="listData"></me-tab-bar>
-</template>
 <script lang="ts" setup>
-// 列表数据
+/**
+ * 列表数据
+ */
 const listData = Object.freeze([
   {
     id: 1,
@@ -111,6 +111,10 @@ const listData = Object.freeze([
   }
 ])
 </script>
+
+<template>
+  <me-tab-bar :list="listData" />
+</template>
 ```
 
 :::
@@ -125,14 +129,13 @@ const listData = Object.freeze([
 ::: CopyCode
 
 ```vue
-<template>
-  <me-tab-bar :list="listData"></me-tab-bar>
-</template>
 <script lang="ts" setup>
 import img from '^/assets/verify.png'
 import imgSelected from '^/assets/verify_selected.png'
 
-// 列表数据
+/**
+ * 列表数据
+ */
 const listData = Object.freeze([
   {
     id: 1,
@@ -161,6 +164,10 @@ const listData = Object.freeze([
   }
 ])
 </script>
+
+<template>
+  <me-tab-bar :list="listData" />
+</template>
 ```
 
 :::
@@ -173,18 +180,32 @@ const listData = Object.freeze([
 ::: CopyCode
 
 ```vue
-<template>
-  <me-tab-bar :list="listData" v-bind="colors"></me-tab-bar>
-</template>
 <script lang="ts" setup>
-// 自定义颜色
+/**
+ * 自定义颜色
+ */
 const colors = Object.freeze({
-  color: '', // 颜色
-  colorSelected: '', // 选中颜色
-  background: '', // 背景颜色
-  borderColor: '' // 上边框颜色
+  /**
+   * 颜色
+   */
+  color: '',
+  /**
+   * 选中颜色
+   */
+  colorSelected: '',
+  /**
+   * 背景颜色
+   */
+  background: '',
+  /**
+   * 上边框颜色
+   */
+  borderColor: ''
 })
-// 列表数据
+
+/**
+ * 列表数据
+ */
 const listData = Object.freeze([
   {
     id: 1,
@@ -212,6 +233,10 @@ const listData = Object.freeze([
   }
 ])
 </script>
+
+<template>
+  <me-tab-bar :list="listData" v-bind="colors" />
+</template>
 ```
 
 :::
