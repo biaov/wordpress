@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { resolve } from 'path'
 import { search } from './search'
 import sidebar from './sidebar'
 
@@ -114,5 +115,6 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     search
-  }
+  },
+  outDir: resolve(import.meta.dirname, '../../dist')
 })
