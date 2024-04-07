@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "一个基于 `vitepress` 搭建的个人博客项目 👍",
   "scripts": {
     "start": "npm run dev",
@@ -22,6 +22,9 @@
     "wordpress",
     "blog"
   ],
+  "engines": {
+    "node": ">=20.12"
+  },
   "type": "module",
   "author": {
     "name": "biaov",
@@ -33,7 +36,7 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
-    "@types/node": "^20.12.2",
-    "vitepress": "^1.0.1"
+    "@types/node": "^20.12.5",
+    "vitepress": "^1.0.2"
   }
 }
