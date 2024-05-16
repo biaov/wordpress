@@ -4,24 +4,15 @@ import type { DefaultTheme } from 'vitepress'
 import { getTitle } from '../../utils'
 import type { ConfigItem } from '../../types'
 
-/**
- * 前缀
- */
-let prefixURL: string
-
 export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
-  prefixURL = item.link
+  const config: DefaultTheme.SidebarItem[] = []
 
-  const allDirs = readdirSync(resolve(import.meta.dirname, '../../docs'), { withFileTypes: true })
-  const config = allDirs
-    .reverse()
-    .filter(dirent => dirent.name !== 'index.md')
-    .map((dirent, i) => {
-      const index = i + 1
-      return getTitle(resolve(dirent.path, dirent.name), `${prefixURL}${index < 10 ? '0' : ''}${index}`)
-    })
+  readdirSync(resolve(import.meta.dirname, '../../docs'), { withFileTypes: true }).forEach((dirent, i) => {
+    if (dirent.name === 'index.md') return
+    const index = i + 1
+    const option = getTitle(resolve(dirent.parentPath, dirent.name), `${item.link}${index < 10 ? '0' : ''}${index}`)
+    option && config.unshift(option)
+  })
 
-  config.unshift(item)
-
-  return config as DefaultTheme.SidebarItem[]
+  return config
 }
