@@ -65,7 +65,7 @@ const current = ref(0)
 
 <template>
   <me-drag v-model:list="list" v-model:current="current">
-    <template #default="{ item }">
+    <template #="{ item }">
       <img :src="item.url" alt="img" mode="fill" />
     </template>
   </me-drag>

@@ -1,6 +1,6 @@
 # Wordpress
 
-一个基于 `vitepress` 搭建的个人博客 👍
+一个基于 `vitepress` 搭建的技术博客文档 👍
 
 <h2 align="center">
     <a href="http://wordpress.biaov.cn/"><img src="https://shields.io/github/v/release/biaov/wordpress.svg?logo=github&label=version" alt="version" /></a>
@@ -62,6 +62,7 @@ npm build
 ### devDependencies
 
 - `@types/node`: node 类型
+- `prettier`: 格式化代码
 - `vitepress`: Vue 驱动的静态网站生成器
 
 ## 贡献者们

@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "一个基于 `vitepress` 搭建的个人博客 👍",
   "scripts": {
     "start": "npm run dev",
@@ -8,7 +8,8 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "ncu": "ncu --configFileName .ncurc.json && npm i",
-    "prettier": "prettier --write '**/*.{js,less,md,json}'"
+    "prettier": "prettier --write '**/*.{js,less,md,json}'",
+    "sync-mineh5ui": "node scripts/sync-mineh5ui"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,8 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
-    "@types/node": "^20.12.13",
-    "vitepress": "^1.2.2"
+    "@types/node": "^20.14.5",
+    "prettier": "^3.3.2",
+    "vitepress": "^1.2.3"
   }
 }

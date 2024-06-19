@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="/">
-        <img src="https://mineh5ui.biaov.cn/logo.svg" width="200px" title="mineh5ui" alt="mineh5ui">
+        <img src="../assets/logo.svg" width="200px" title="mineh5ui" alt="mineh5ui">
     </a>
 </p>
 <h2 align="center">mine-h5-ui</h2>
@@ -17,7 +17,7 @@
 ## 特性
 
 - 基于 `Vue3.x` 开发的 UI 组件。
-- 使用 `npm + webpack/vite + babel` 的工作流，支持 `ES6+`。
+- 使用 `npm + vite` 的工作流，支持 `ES6+`。
 - 提供友好的 `API`，可灵活的使用组件。
 
 ## 快速开始

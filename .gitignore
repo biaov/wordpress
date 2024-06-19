@@ -7,3 +7,4 @@ dist/
 zip
 cache
 package-lock.json
+temp
