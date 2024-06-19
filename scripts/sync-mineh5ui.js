@@ -4,6 +4,7 @@ import { resolve } from 'path'
 const { dirname } = import.meta
 
 const mineh5uiProject = resolve(dirname, '../../mine-h5-ui/v2/examples')
+
 /**
  * 复制配置文件
  */
