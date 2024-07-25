@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync } from 'fs'
 import prettier from 'prettier'
 import stripJsonComments from 'strip-json-comments'
 

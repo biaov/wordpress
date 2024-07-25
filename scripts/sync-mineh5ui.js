@@ -10,7 +10,7 @@ const mineh5uiProject = resolve(dirname, '../../mine-h5-ui/v2/examples')
  */
 const cpConfig = async () => {
   const navConfigName = 'nav.config'
-  const tempConfigPath = `../temp/${navConfigName}.js`
+  const tempConfigPath = resolve(dirname, `../temp/${navConfigName}.js`)
   cpSync(resolve(mineh5uiProject, `config/${navConfigName}.ts`), tempConfigPath)
   const { default: config } = await import(tempConfigPath)
 
