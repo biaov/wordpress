@@ -116,5 +116,8 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
     search
   },
-  outDir: resolve(import.meta.dirname, '../../dist')
+  outDir: resolve(import.meta.dirname, '../../dist'),
+  sitemap: {
+    hostname: 'https://wordpress.biaov.cn/'
+  }
 })
