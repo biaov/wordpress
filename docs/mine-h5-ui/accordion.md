@@ -6,7 +6,7 @@
 
 ::: CopyCode
 
-```ts
+```js
 import { createApp } from 'vue'
 import App from './App.vue'
 import { MeAccordion, MeAccordionItem } from 'mine-h5-ui'

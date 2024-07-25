@@ -34,13 +34,7 @@ createApp(App).use(MeForm).mount('#app')
 <template>
   <me-form :model="form" :rules="rules" @submit="onSubmit">
     <me-input v-model="form.username" placeholder="请输入用户名" label-width="70px" label="用户名"></me-input>
-    <me-input
-      v-model="form.password"
-      :password="true"
-      placeholder="请输入6-12位数字+字母组合"
-      label-width="70px"
-      label="密码"
-    ></me-input>
+    <me-input v-model="form.password" :password="true" placeholder="请输入6-12位数字+字母组合" label-width="70px" label="密码"></me-input>
     <me-input v-model="form.sms" placeholder="请输入短信验证码" sms-msg="短信验证码" :sms-is="false"></me-input>
     <me-button type="primary" native-type="submit" width="100%">提交</me-button>
   </me-form>

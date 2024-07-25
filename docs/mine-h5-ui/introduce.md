@@ -35,7 +35,7 @@
 ## 链接
 
 - [👉 意见反馈](https://github.com/biaov/mine-h5-ui/issues)
-- [👉 更新日志](/mine-h5-ui/logs)
+- [👉 更新日志](/v2/doc/logs)
 
 ## 开源协议
 

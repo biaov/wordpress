@@ -73,13 +73,7 @@ const onChange = index => {
 
 <template>
   <me-tab v-model="active" @change="onChange">
-    <me-tab-item
-      v-for="item in listData"
-      :key="item.id"
-      :name="item.id"
-      :label="item.label"
-      v-text="item.content"
-    ></me-tab-item>
+    <me-tab-item v-for="item in listData" :key="item.id" :name="item.id" :label="item.label" v-text="item.content"></me-tab-item>
   </me-tab>
 </template>
 ```
