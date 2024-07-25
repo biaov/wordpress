@@ -7,7 +7,7 @@ export const search: DefaultTheme.Config['search'] = {
   provider: 'algolia',
   options:{
     appId: 'J4IXB1KJHT',
-    apiKey: 'dc49aef8f8c73afe86481f061d7ff175',
+    apiKey: 'bf1bfbfae3d460e0a5b4f5e7c9515ef2',
     indexName: 'wordpress-biaov',
     disableUserPersonalization: false,
     placeholder: '搜索文档',
@@ -51,3 +51,4 @@ export const search: DefaultTheme.Config['search'] = {
     }
   }
 }
+

@@ -32,6 +32,9 @@ const cpDocs = () => {
   const input = resolve(mineh5uiProject, 'docs')
 
   cpSync(input, output, { recursive: true })
+
+  // (/v2/doc/
+  // (/mine-h5-ui/
 }
 
 // 执行
