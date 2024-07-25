@@ -51,3 +51,4 @@ export const search: DefaultTheme.Config['search'] = {
     }
   }
 }
+

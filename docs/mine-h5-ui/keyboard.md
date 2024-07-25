@@ -42,7 +42,8 @@ const app = createApp(App).use(MeKeyboard).mount('#app')
 ::: CopyCode
 
 ```html
-<me-keyboard v-model:visible="isShow" skin-type="gray" /> <me-keyboard v-model:visible="isShow" skin-type="dark" />
+<me-keyboard v-model:visible="isShow" skin-type="gray" />
+<me-keyboard v-model:visible="isShow" skin-type="dark" />
 ```
 
 :::
