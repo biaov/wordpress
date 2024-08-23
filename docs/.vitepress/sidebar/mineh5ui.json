@@ -48,6 +48,7 @@
           "actionSheet",
           "toast",
           "loading",
+          "showLoading",
           "mask",
           "messageBox",
           "dialog",
