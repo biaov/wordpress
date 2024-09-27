@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeMspaint.css'
 
 createApp(App).use(MeMspaint).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,13 +23,9 @@ createApp(App).use(MeMspaint).mount('#app')
 
 - 组件初始化一个画图区域。
 
-::: CopyCode
-
 ```html
 <me-mspaint />
 ```
-
-:::
 
 ### 自定义样式
 
@@ -44,13 +36,9 @@ createApp(App).use(MeMspaint).mount('#app')
 - 通过 `strokeStyle` 属性来设置组件的线条颜色，默认为 `#f56c6c`。
 - 通过 `lineWidth` 属性来设置组件的线条大小，默认为 `1`。
 
-::: CopyCode
-
 ```html
 <me-mspaint width="260px" height="200px" background="#000" border-style="5px dashed #f60" stroke-style="#fff" line-width="3" />
 ```
-
-:::
 
 ## API
 

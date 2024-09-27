@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeActionSheet.css'
 
 createApp(App).use(MeActionSheet).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,8 +24,6 @@ createApp(App).use(MeActionSheet).mount('#app')
 - 通过 `v-model:visible` 来设置动作面板的显示和隐藏。
 - 通过 `list` 属性来设置需要展示的值，list 为一个对象数组，必传。
 - 对象必须包含 id 值和 value 值，可以使用 `index` 和 `label` 属性来设置其它的名称，默认分别为 id 和 value。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -60,8 +54,6 @@ const listData = ref([
 ])
 </script>
 ```
-
-:::
 
 ## API
 

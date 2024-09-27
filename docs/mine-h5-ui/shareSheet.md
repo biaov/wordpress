@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeShareSheet.css'
 
 createApp(App).use(MeShareSheet).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,8 +23,6 @@ createApp(App).use(MeShareSheet).mount('#app')
 
 - 通过 `v-model:visible` 来设置分享面板的显示和隐藏。
 - 通过属性 `tips` 来设置分享面板的提示文本。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -149,8 +143,6 @@ const onCancel = () => {
 }
 </style>
 ```
-
-:::
 
 ## API
 

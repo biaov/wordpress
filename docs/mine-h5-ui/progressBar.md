@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeProgressBar.css'
 
 createApp(App).use(MeProgressBar).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,8 +23,6 @@ createApp(App).use(MeProgressBar).mount('#app')
 
 - 通过 `v-model` 来设置进度条的进度。
 - 通过属性 `type` 来设置进度条的类型，默认为 line。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -45,33 +39,23 @@ const progress = ref(0)
 </template>
 ```
 
-:::
-
 ### 圆点使用
 
 - 通过属性 `text-show` 来设置文本的显示状态，默认为 true。
 - 文本和圆点相对。
 
-::: CopyCode
-
 ```html
 <me-progress-bar v-model="progress" type="line" :size="10" :text-show="false" />
 ```
-
-:::
 
 ### 自定义使用
 
 - 通过属性 `backgorund` 来设置进度条的默认背景色，默认为 #ccc。
 - 通过属性 `activeColor` 来设置进度条的活动颜色，默认为 #409eff。
 
-::: CopyCode
-
 ```html
 <me-progress-bar v-model="progress" type="line" background="linear-gradient(90deg, #8af2ba, #1e57f5)" active-color="#f66" padding="0 25px" />
 ```
-
-:::
 
 ## API
 

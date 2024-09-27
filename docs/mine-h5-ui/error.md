@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeError.css'
 
 createApp(App).use(MeError).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,38 +23,26 @@ createApp(App).use(MeError).mount('#app')
 
 - 通过属性 `visible` 来设置组件的显示状态，默认值为 false。
 
-::: CopyCode
-
 ```html
 <me-error />
 ```
-
-:::
 
 ### 自定义文本
 
 - 通过属性 `title` 来设置组件的标题，默认值为 `页面错误`。
 - 通过属性 `subtit` 来设置组件的副标题，默认值为 `请检查网络是否正常`。
 
-::: CopyCode
-
 ```html
 <me-error title="标题" subtit="副标题" />
 ```
-
-:::
 
 ### 暗色主题
 
 - 通过属性 `theme` 来设置组件的主题，可选值为 `light` 、`dark`，默认值为 light。
 
-::: CopyCode
-
 ```html
 <me-error theme="dark" />
 ```
-
-:::
 
 ## API
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeInput.css'
 
 createApp(App).use(MeInput).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MeInput).mount('#app')
 
 - 通过属性 `type` 设置输入框的类型，支持原生 type 类型，默认为 text。
 
-::: CopyCode
-
 ```html
 <me-input type="text" v-model="inputValue" />
 ```
 
-:::
-
 ### 自定义类型
 
 - 通过属性 `label` 设置输入框的标签内容。
-
-::: CopyCode
 
 ```html
 <me-input v-model="inputValue" label="用户名" label-width="78px" placeholder="请输入用户名" />
@@ -48,13 +38,9 @@ createApp(App).use(MeInput).mount('#app')
 <me-input v-model="inputValue" label="图标" label-width="78px" label-color="#ec632f" label-icon="icon-star" placeholder="请输入文本" />
 ```
 
-:::
-
 ### 聚焦颜色
 
 - 通过属性 `focus-type` 设置输入框的聚焦颜色，默认为 default 。
-
-::: CopyCode
 
 ```html
 <me-input v-model="inputValue" label="信息聚焦" focus-type="primary" />
@@ -64,46 +50,32 @@ createApp(App).use(MeInput).mount('#app')
 <me-input v-model="inputValue" label="自定聚焦" focus-color="#f100ff" />
 ```
 
-:::
-
 ### 图标按钮
 
 - 通过属性 `icon` 设置输入框的图标。
-
-::: CopyCode
 
 ```html
 <me-input v-model="inputValue" label="密码" :password="true" />
 <me-input v-model="inputValue" label="清理" icon="icon-close" @click-icon="handleIcon" />
 ```
 
-:::
-
 ### 短信验证码
 
 - 通过属性 `sms-msg` 和 `sms-is` 设置输入框的短信验证码按钮的显示。
-
-::: CopyCode
 
 ```html
 <me-input v-model="inputValue" sms-msg="短信验证码" :sms-is="false" />
 <me-input v-model="inputValue" sms-msg="短信验证码" sms-is="icon-close" sms-color="#549ff2" placeholder="自定义验证码颜色" @click-sms="handleSMS" />
 ```
 
-:::
-
 ### 禁用状态
 
 - 通过属性 `readonly` 和 `disabled` 设置输入框的只读和禁用状态。
-
-::: CopyCode
 
 ```html
 <me-input v-model="inputValue" label="只读状态" :readonly="true" />
 <me-input v-model="inputValue" label="禁用状态" :disabled="true" />
 ```
-
-:::
 
 ## API
 

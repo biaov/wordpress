@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeCountTo.css'
 
 createApp(App).use(MeCountTo).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,38 +23,26 @@ createApp(App).use(MeCountTo).mount('#app')
 
 - 通过属性 `end-value` 来设置需要滚动到的数字。
 
-::: CopyCode
-
 ```html
 <me-count-to :end-value="6666" />
 ```
-
-:::
 
 ### 起始值 & 时间
 
 - 通过属性 `start-value` 来设置开始滚动的数字。
 - 通过属性 `duration` 来设置组件持续的时间。
 
-::: CopyCode
-
 ```html
 <me-count-to :start-value="100" :end-value="6666" :duration="5000" />
 ```
-
-:::
 
 ### 添加千分符
 
 - 通过属性 `thousand` 来是否转换为千分符。
 
-::: CopyCode
-
 ```html
 <me-count-to :start-value="100" :end-value="6666" thousand />
 ```
-
-:::
 
 ## API
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeFloatButton.css'
 
 createApp(App).use(MeFloatButton).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MeFloatButton).mount('#app')
 
 - 通过属性 `style` 来设置组件的位置。
 
-::: CopyCode
-
 ```html
 <me-float-button :style="{ right: '20px', top: '100px'}">按钮</me-float-button>
 ```
 
-:::
-
 ### 按钮形状
 
 - 通过属性 `style` 来设置组件的按钮形状。
-
-::: CopyCode
 
 ```html
 <me-float-button :style="{ right: '20px', top: '100px', borderRadius: '4px'}">按钮</me-float-button>
@@ -49,7 +39,7 @@ createApp(App).use(MeFloatButton).mount('#app')
 
 - 通过属性 `style` 来设置组件的自定义颜色。
 
-::: CopyCode
+CopyCode
 
 ```html
 <me-float-button :style="{ right: '20px', top: '100px', background: '#f60'}">按钮</me-float-button>
@@ -59,8 +49,6 @@ createApp(App).use(MeFloatButton).mount('#app')
 
 - 通过属性 `style` 来设置组件的自定义大小。
 
-::: CopyCode
-
 ```html
 <me-float-button :style="{ right: '20px', top: '100px', width: '40px', height: '40rpx'}">按钮</me-float-button>
 ```
@@ -69,7 +57,7 @@ createApp(App).use(MeFloatButton).mount('#app')
 
 - 通过属性 `type` 来设置组件的类型，默认值为 `default`。
 
-::: CopyCode
+CopyCode
 
 ```html
 <me-float-button type="backTop" :style="{ right: '20px', top: '100px'}">按钮</me-float-button>

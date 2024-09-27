@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeSearch.css'
 
 createApp(App).use(MeSearch).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,31 +23,21 @@ createApp(App).use(MeSearch).mount('#app')
 
 - 通过 `v-model` 指令来设置搜索框的值。
 
-::: CopyCode
-
 ```html
 <me-search v-model="value" />
 ```
-
-:::
 
 ### 占位符内容
 
 - 通过 `placeholder` 属性来设置搜索框的占位符内容，默认为**请搜索**。
 
-::: CopyCode
-
 ```html
 <me-search v-model="value" placeholder="请输入搜索内容" />
 ```
 
-:::
-
 ### 自定义右侧按钮内容
 
 - 通过 `btnText` 属性来设置搜索框右侧按钮内容。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -75,55 +61,37 @@ const btnCancel = () => {
 </script>
 ```
 
-:::
-
 ### 对齐方式
 
 - 通过 `align` 属性来设置搜索框的内容对齐方式，默认为 left。
-
-::: CopyCode
 
 ```html
 <me-search v-model="value" align="center" />
 ```
 
-:::
-
 ### 设置倒角
 
 - 通过 `radius` 属性来设置搜索框的倒角，支持 CSS 的 border-radius 值，默认为 4px。
-
-::: CopyCode
 
 ```html
 <me-search v-model="value" radius="20px" />
 ```
 
-:::
-
 ### 自定义样式
 
 - 通过 `background` 和 `color` 属性来设置搜索框的样式，支持 CSS 的 background 和 color 值，background 默认值为 #f6f6f6，color 默认值为 #494949。
-
-::: CopyCode
 
 ```html
 <me-search v-model="value" background="linear-gradient(-45deg, #4bb0ff, #6149f6)" color="#fff" />
 ```
 
-:::
-
 ### 禁用搜索框
 
 - 通过 `disabled` 属性来设置搜索框的禁用状态，默认为 false。
 
-::: CopyCode
-
 ```html
 <me-search v-model="value" :disabled="true" />
 ```
-
-:::
 
 ## API
 

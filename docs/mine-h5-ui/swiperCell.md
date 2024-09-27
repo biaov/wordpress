@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeSwiperCell.css'
 
 createApp(App).use(MeSwiperCell).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -29,8 +25,6 @@ createApp(App).use(MeSwiperCell).mount('#app')
 - 在你的 `template` 上设置 `#content` 来表示你要显示的部分。
 - 在你的 `template` 上设置 `#hidden` 来表示你要隐藏的部分。
 - 注意：你的隐藏区域要设置宽度，即你的 `#hidden` 元素的宽度，不然可能用不了。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -86,8 +80,6 @@ const onDelete = () => {
 }
 </style>
 ```
-
-:::
 
 ## API
 

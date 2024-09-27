@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MePopup.css'
 
 createApp(App).use(MePopup).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MePopup).mount('#app')
 
 - 通过 `v-model` 指令来设置弹出层的状态。
 
-::: CopyCode
-
 ```html
 <me-popup v-model:visible="false" />
 ```
 
-:::
-
 ### 弹出位置
 
 - 通过 `position` 属性来设置弹出框位置，支持 `center`、`top`、`right`、`bottom`、`left` 五种关键字，默认为 center。
-
-::: CopyCode
 
 ```html
 <me-popup v-model:visible="false" position="top" />
@@ -48,31 +38,21 @@ createApp(App).use(MePopup).mount('#app')
 <me-popup v-model:visible="false" position="left" />
 ```
 
-:::
-
 ### 关闭图标
 
 - 通过 `closeable` 属性来设置弹出框的关闭图标的显示，默认为 false。
-
-::: CopyCode
 
 ```html
 <me-popup v-model:visible="false" :closeable="true" />
 ```
 
-:::
-
 ### 圆角弹窗
 
 - 通过 `radius` 属性来设置弹出框的倒角，默认为 0。
 
-::: CopyCode
-
 ```html
 <me-popup v-model:visible="false" position="bottom" radius="6px" />
 ```
-
-:::
 
 ## API
 

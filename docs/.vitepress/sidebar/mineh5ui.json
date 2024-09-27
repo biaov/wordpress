@@ -84,7 +84,8 @@
           "error",
           "guide",
           "skeleton",
-          "besselCurve"
+          "besselCurve",
+          "colorPicker"
         ]
       },
       {

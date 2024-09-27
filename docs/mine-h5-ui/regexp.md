@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -22,8 +20,6 @@ Object.keys(MeAPI).forEach(key => {
 })
 ```
 
-:::
-
 ## 提示
 
 - 如果你觉得重新编写 HTML 结构麻烦，可以直接复制下面的代码。
@@ -31,8 +27,6 @@ Object.keys(MeAPI).forEach(key => {
 ## 代码演示
 
 ### 校验-手机号码
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -48,8 +42,6 @@ console.log(valid.test(18888888888)) // 输出: true
 console.log(valid.test(12888888888)) // 输出: false
 </script>
 ```
-
-:::
 
 ## 源码
 

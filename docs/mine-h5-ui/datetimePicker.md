@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeDatetimePicker.css'
 
 createApp(App).use(MeDatetimePicker).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,73 +23,49 @@ createApp(App).use(MeDatetimePicker).mount('#app')
 
 - 通过 `v-model` 绑定点击确定按钮之后选中的时间，通过 `visible` 属性设置时间选择器的显示和隐藏。
 
-::: CopyCode
-
 ```html
 <me-datetime-picker type="date" v-model="value" :visible="true" />
 ```
-
-:::
 
 ### 选择年月
 
 - 通过 `type` 属性设置时间选择器的类型，选择年月设置为 year-month，默认值为 date。
 
-::: CopyCode
-
 ```html
 <me-datetime-picker type="year-month" v-model="value" :visible="true" />
 ```
-
-:::
 
 ### 选择月日
 
 - 通过 `type` 属性设置时间选择器的类型，选择月日设置为 month-day，默认值为 date。
 
-::: CopyCode
-
 ```html
 <me-datetime-picker type="month-day" v-model="value" :visible="true" />
 ```
-
-:::
 
 ### 选择时间
 
 - 通过 `type` 属性设置时间选择器的类型，选择时间设置为 time，默认值为 date。
 
-::: CopyCode
-
 ```html
 <me-datetime-picker type="time" v-model="value" :visible="true" />
 ```
-
-:::
 
 ### 选择完整时间
 
 - 通过 `type` 属性设置时间选择器的类型，选择完整时间设置为 datetime，默认值为 date。
 
-::: CopyCode
-
 ```html
 <me-datetime-picker type="datetime" v-model="value" :visible="true" />
 ```
-
-:::
 
 ### 自定义时间区间
 
 - 通过 `min-date` 和 `max-date` 属性设置时间选择器时间区间。默认值为当前 10 年和后 10 年。
 
-::: CopyCode
-
 ```html
 <me-datetime-picker type="datetime" v-model="value" :visible="true" :min-date="" :max-date="" />
 ```
-
-:::
 
 ## API
 

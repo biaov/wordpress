@@ -4,13 +4,9 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```js
 import 'mine-h5-ui/styles/style.css'
 ```
-
-:::
 
 ## 提示
 
@@ -22,13 +18,9 @@ import 'mine-h5-ui/styles/style.css'
 
 - 向左浮动
 
-::: CopyCode
-
 ```html
 <div class="me-lf"></div>
 ```
-
-:::
 
 ## Transition 代码演示
 
@@ -36,13 +28,9 @@ import 'mine-h5-ui/styles/style.css'
 
 - 透明过渡动画
 
-::: CopyCode
-
 ```html
 <transition name="fade"></transition>
 ```
-
-:::
 
 ## 源码
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -15,8 +13,6 @@ import 'mine-h5-ui/styles/MeRadioGroup.css'
 
 createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,8 +24,6 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 
 - 通过 `v-model` 绑定值当前选中项的 name。
 
-::: CopyCode
-
 ```html
 <me-radio-group v-model="radio">
   <me-radio name="1">单选框 1</me-radio>
@@ -37,25 +31,17 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 </me-radio-group>
 ```
 
-:::
-
 ### 单独使用
 
 - 通过 `v-model` 绑定值当前是否选中状态。
-
-::: CopyCode
 
 ```html
 <me-radio v-model="radio">单选框</me-radio>
 ```
 
-:::
-
 ### 排列方式
 
 - 通过属性 `shape` 设置单选框的排列方式，默认为 round。
-
-::: CopyCode
 
 ```html
 <me-radio-group v-model="radio" shape="square">
@@ -64,13 +50,9 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 </me-radio-group>
 ```
 
-:::
-
 ### 自定义图标
 
 - 通过属性 `icon` 和 `icon-select` 设置单选框的未选中图标和选中图标，未选中图标的默认值为 icon-radio3，选中图标的默认值为 icon-radio。
-
-::: CopyCode
 
 ```html
 <me-radio-group v-model="radio">
@@ -79,13 +61,9 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 </me-radio-group>
 ```
 
-:::
-
 ### 自定义选中颜色
 
 - 通过属性 `checked-color` 设置单选框的选中颜色，默认值为 #409eff。
-
-::: CopyCode
 
 ```html
 <me-radio-group v-model="radio">
@@ -94,13 +72,9 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 </me-radio-group>
 ```
 
-:::
-
 ### 自定义大小
 
 - 通过属性 `icon-size` 设置单选框的大小，默认值为 20px。
-
-::: CopyCode
 
 ```html
 <me-radio-group v-model="radio">
@@ -109,13 +83,9 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
 </me-radio-group>
 ```
 
-:::
-
 ### 禁用状态
 
 - 通过属性 `disabled` 设置单选框的禁用状态，默认值为 false。
-
-::: CopyCode
 
 ```html
 <me-radio-group v-model="radio">
@@ -123,8 +93,6 @@ createApp(App).use(MeRadio).use(MeRadioGroup).mount('#app')
   <me-radio name="2" :disabled="true">单选框 2</me-radio>
 </me-radio-group>
 ```
-
-:::
 
 ## API
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeDialog.css'
 
 createApp(App).use(MeDialog).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,8 +23,6 @@ createApp(App).use(MeDialog).mount('#app')
 
 - 通过 `v-model:visible` 来设置对话框的显示和隐藏。
 - 通过属性 `tips` 来设置顶部的提示文本。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -92,8 +86,6 @@ const onConfirm = () => {
 }
 </style>
 ```
-
-:::
 
 ## API
 

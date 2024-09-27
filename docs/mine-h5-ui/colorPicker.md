@@ -1,4 +1,4 @@
-# Divider 分割线
+# ColorPicker 颜色选择器 `v2.12.0`
 
 ---
 
@@ -7,10 +7,10 @@
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import { MeDivider } from 'mine-h5-ui'
-import 'mine-h5-ui/styles/MeDivider.css'
+import { MeColorPicker } from 'mine-h5-ui'
+import 'mine-h5-ui/styles/MeColorPicker.css'
 
-createApp(App).use(MeDivider).mount('#app')
+createApp(App).use(ColorPicker).mount('#app')
 ```
 
 ## 提示

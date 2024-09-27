@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MePassword.css'
 
 createApp(App).use(MePassword).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -26,8 +22,6 @@ createApp(App).use(MePassword).mount('#app')
 ### 基础用法
 
 - 通过 `v-model` 指令来设置输入框的值，一般配合数字键盘输入。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -88,13 +82,9 @@ const onComplate = () => {
 </template>
 ```
 
-:::
-
 ### 选择主题样式
 
 - 通过 `skin-type` 属性来设置输入框的主题样式，默认值为 white。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -103,13 +93,9 @@ const onComplate = () => {
 </template>
 ```
 
-:::
-
 ### 自定义输入框数量
 
 - 通过 `num` 属性来设置输入框的数量，默认值为 6。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -118,13 +104,9 @@ const onComplate = () => {
 </template>
 ```
 
-:::
-
 ### 选择输入框模式
 
 - 通过 `type` 属性来设置输入框的模式，默认值为 password。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -132,8 +114,6 @@ const onComplate = () => {
   <me-keyboard v-model="keyboardValue" @click="handleNum" @delete="onDelete" @complate="onComplate"></me-keyboard>
 </template>
 ```
-
-:::
 
 ## API
 

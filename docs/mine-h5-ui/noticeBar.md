@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeNoticeBar.css'
 
 createApp(App).use(MeNoticeBar).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,8 +23,6 @@ createApp(App).use(MeNoticeBar).mount('#app')
 
 - 通过属性 `list` 来设置组件的内容。
 - 通过属性 `loop` 开控制组件动画的开启。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -47,15 +41,11 @@ const listData = Object.freeze([
 </template>
 ```
 
-:::
-
 ### 滚动方向
 
 - 通过属性 `scroll` 来设置组件的滚动方向，可选值为 `horizontal / vertical`，默认值为 horizontal。
   - horizontal - 水平方向
   - vertical - 垂直方向
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -74,8 +64,6 @@ const noticeBar = Object.freeze({
 </template>
 ```
 
-:::
-
 ### 自定义样式
 
 - 通过属性 `preappend-icon` 来设置组件的前面图标，默认值为 notice。
@@ -86,8 +74,6 @@ const noticeBar = Object.freeze({
 - 通过属性 `radius` 来设置组件的倒角，默认值为 4。
 - 通过属性 `background` 来设置组件的背景色，默认值为 #f6f6f6。
 - 通过属性 `color` 来设置组件的文本颜色，默认值为 #494949。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -111,8 +97,6 @@ const noticeBar = Object.freeze({
   <me-notice-bar v-bind="noticeBar" />
 </template>
 ```
-
-:::
 
 ## API
 

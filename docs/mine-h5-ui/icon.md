@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeIcon.css'
 
 createApp(App).use(MeIcon).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -29,8 +25,6 @@ createApp(App).use(MeIcon).mount('#app')
 
 - 引入 iconfont 图标
 
-::: CopyCode
-
 ```js
 /**
  * 线上地址, 此地址有可能已过期, 推荐使用线下文件
@@ -38,17 +32,11 @@ createApp(App).use(MeIcon).mount('#app')
 import '//at.alicdn.com/t/font_1774902_nar195smdvf.css'
 ```
 
-:::
-
 - 使用 iconfont 图标
-
-::: CopyCode
 
 ```html
 <me-icon name="icon-close" />
 ```
-
-:::
 
 ## 代码演示
 
@@ -56,20 +44,14 @@ import '//at.alicdn.com/t/font_1774902_nar195smdvf.css'
 
 - 通过 `name` 属性来设置图标。
 
-::: CopyCode
-
 ```html
 <me-icon name="icon-baseline-close-px">icon-baseline-close-px</me-icon>
 <me-icon name="icon-success">icon-success</me-icon>
 ```
 
-:::
-
 ### 自定义颜色
 
 - 通过 `color` 属性来设置图标颜色，默认为 #494949。
-
-::: CopyCode
 
 ```html
 <me-icon name="icon-warning1" color="#e6a23c" />
@@ -77,21 +59,15 @@ import '//at.alicdn.com/t/font_1774902_nar195smdvf.css'
 <me-icon name="icon-Success" color="#67c23a" />
 ```
 
-:::
-
 ### 自定义大小
 
 - 通过 `size` 属性来设置图标颜色，默认为 24px。
-
-::: CopyCode
 
 ```html
 <me-icon name="icon-tuichu" size="16px" />
 <me-icon name="icon-tuichu" size="20px" />
 <me-icon name="icon-tuichu" size="24px" />
 ```
-
-:::
 
 ### 所有图标
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MePullRefresh.css'
 
 createApp(App).use(MePullRefresh).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -26,8 +22,6 @@ createApp(App).use(MePullRefresh).mount('#app')
 ### 基础用法
 
 - 通过 `v-model` 来设置组件的加载状态。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -62,13 +56,9 @@ const onRefresh = () => {
 </template>
 ```
 
-:::
-
 ### 自定义提示文本
 
 - 通过属性 `load-text` 来设置提示文本，默认为 `["开始下拉...", "释放刷新...", "还在请求后台...", "成功了"]`。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -107,8 +97,6 @@ const onRefresh = () => {
   </me-pull-refresh>
 </template>
 ```
-
-:::
 
 ## API
 

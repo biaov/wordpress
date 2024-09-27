@@ -6,8 +6,6 @@
 
 ## 全局引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -20,8 +18,6 @@ Object.keys(MeAPI).forEach(key => {
   app.config.globalProperties[`$${key}`] = (API as any)[key]
 })
 ```
-
-:::
 
 ## 提示
 

@@ -31,7 +31,10 @@ const replacePath = path => {
   const files = readdirSync(path)
   files.forEach(async name => {
     const filePath = join(path, name)
-    const content = readFileSync(filePath).toString().replaceAll('(/v2/doc/', '(/mine-h5-ui/')
+    const content = readFileSync(filePath)
+      .toString()
+      .replaceAll('(/v2/doc/', '(/mine-h5-ui/')
+      .replace(/(?:\:\:\: CopyCode)([\s\S]+?)(?:\:\:\:)/g, '$1')
     const value = await format(content)
     writeFileSync(filePath, value)
   })

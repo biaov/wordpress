@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeCountDown.css'
 
 createApp(App).use(MeCountDown).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,25 +23,17 @@ createApp(App).use(MeCountDown).mount('#app')
 
 - 通过属性 `time` 来设置组件的倒计时间，单位为毫秒 (ms)。
 
-::: CopyCode
-
 ```html
 <me-count-down :time="2*60*60*1000" />
 ```
-
-:::
 
 ### 毫秒级渲染
 
 - 通过属性 `format` 来设置组件的格式，完整格式为 `DD:hh:mm:ss:ms`,默认格式为 `hh:mm:ss`。
 
-::: CopyCode
-
 ```html
 <me-count-down :time="2*60*60*1000" format="hh:mm:ss:ms" />
 ```
-
-:::
 
 ## API
 

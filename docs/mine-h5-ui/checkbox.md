@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -15,8 +13,6 @@ import 'mine-h5-ui/styles/MeCheckboxGroup.css'
 
 createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -29,8 +25,6 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 - 通过 `v-model` 绑定值当前选中项的 name。
 - 如果是组合使用，则属性 `name` 必传。
 
-::: CopyCode
-
 ```html
 <me-checkbox-group v-model="checkbox">
   <me-checkbox name="1">复选框 1</me-checkbox>
@@ -38,25 +32,17 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 </me-checkbox-group>
 ```
 
-:::
-
 ### 单独使用
 
 - 通过 `v-model` 绑定值当前是否选中状态。
-
-::: CopyCode
 
 ```html
 <me-checkbox v-model="checkbox">复选框</me-checkbox>
 ```
 
-:::
-
 ### 排列方式
 
 - 通过属性 `shape` 设置复选框的排列方式，默认为 vertical
-
-::: CopyCode
 
 ```html
 <me-checkbox-group v-model="checkbox" direction="horizontal">
@@ -65,13 +51,9 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 </me-checkbox-group>
 ```
 
-:::
-
 ### 自定义图标
 
 - 通过属性 `icon` 和 `icon-select` 设置复选框的未选中图标和选中图标，未选中图标的默认值为 icon-radio3，选中图标的默认值为 icon-radio。
-
-::: CopyCode
 
 ```html
 <me-checkbox-group v-model="checkbox">
@@ -80,13 +62,9 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 </me-checkbox-group>
 ```
 
-:::
-
 ### 自定义选中颜色
 
 - 通过属性 `checked-color` 设置复选框的选中颜色，默认值为 #409eff。
-
-::: CopyCode
 
 ```html
 <me-checkbox-group v-model="checkbox">
@@ -95,13 +73,9 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 </me-checkbox-group>
 ```
 
-:::
-
 ### 自定义大小
 
 - 通过属性 `icon-size` 设置复选框的大小，默认值为 20px。
-
-::: CopyCode
 
 ```html
 <me-checkbox-group v-model="checkbox">
@@ -110,13 +84,9 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
 </me-checkbox-group>
 ```
 
-:::
-
 ### 禁用状态
 
 - 通过属性 `disabled` 设置复选框的禁用状态，默认值为 false。
-
-::: CopyCode
 
 ```html
 <me-checkbox-group v-model="checkbox">
@@ -124,8 +94,6 @@ createApp(App).use(MeCheckbox).use(MeCheckboxGroup).mount('#app')
   <me-checkbox name="2" :disabled="true">复选框 2</me-checkbox>
 </me-checkbox-group>
 ```
-
-:::
 
 ## API
 

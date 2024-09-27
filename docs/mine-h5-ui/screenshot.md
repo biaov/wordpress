@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeScreenshot.css'
 
 createApp(App).use(MeScreenshot).mount('#app')
 ```
-
-:::
 
 ## 复制
 
@@ -26,8 +22,6 @@ createApp(App).use(MeScreenshot).mount('#app')
 ### 基础用法
 
 - 通过属性 `start` 来设置组件开始截图状态。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -53,21 +47,15 @@ const onClick = () => {
 </template>
 ```
 
-:::
-
 ### 允许下载
 
 - 通过属性 `allow-down` 来设置组件允许下载状态。
-
-::: CopyCode
 
 ```html
 <me-screenshot v-bind="{ start }" allow-down>
   <p @click="onClick">点击截图</p>
 </me-screenshot>
 ```
-
-:::
 
 ## API
 
