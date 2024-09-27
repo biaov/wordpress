@@ -15,7 +15,9 @@ hero:
     - theme: alt
       text: 源码地址 →
       link: https://github.com/biaov/wordpress
-
+  image:
+    src: /logo.svg
+    alt: 个人博客
 features:
   - icon: 📝
     title: 简介
