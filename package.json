@@ -7,7 +7,6 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "ncu": "ncu --configFileName .ncurc.json && npm i",
     "prettier": "prettier --write '**/*.{js,less,md,json}'",
     "sync-mineh5ui": "node scripts/sync-mineh5ui"
   },
