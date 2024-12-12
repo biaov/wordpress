@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -15,8 +13,6 @@ import 'mine-h5-ui/styles/MeShowLoading.css'
 createApp(App).use(MeShowLoading).mount('#app')
 ```
 
-:::
-
 ## 提示
 
 - 如果你觉得重新编写 HTML 结构麻烦，可以直接复制下面的代码。
@@ -24,8 +20,6 @@ createApp(App).use(MeShowLoading).mount('#app')
 ## 代码演示
 
 ### 基础用法
-
-::: CopyCode
 
 ```html
 <script setup>
@@ -46,21 +40,15 @@ createApp(App).use(MeShowLoading).mount('#app')
 </template>
 ```
 
-:::
-
 ### 自定义文本
 
 - 通过传入参数来显示加载框的文本
-
-::: CopyCode
 
 ```ts
 import { MeShowLoading } from 'mine-h5-ui'
 
 MeShowLoading('加载中...')
 ```
-
-:::
 
 ## API
 

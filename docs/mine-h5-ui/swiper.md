@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -19,8 +17,6 @@ app.use(MeSwiperItem)
 app.mount('#app')
 ```
 
-:::
-
 ## 提示
 
 - 如果你觉得重新编写 HTML 结构麻烦，可以直接复制下面的代码。
@@ -32,8 +28,6 @@ app.mount('#app')
 - 通过 `MeSwiper` 的属性 `dot` 来设置组件的指示点，默认为 false。
 - 通过 `MeSwiperItem` 的属性 `url` 来设置组件需要轮播的图片。
 
-::: CopyCode
-
 ```html
 <me-swiper dot>
   <me-swiper-item name="1" url="https://dummyimage.com/750x350/4BC7F5/fff&text=1"></me-swiper-item>
@@ -42,13 +36,9 @@ app.mount('#app')
 </me-swiper>
 ```
 
-:::
-
 ### 设置文本
 
 - 通过 `MeSwiperItem` 的属性 `text` 来设置组件的文本。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -78,8 +68,6 @@ const listData = Object.freeze([
 </template>
 ```
 
-:::
-
 ### 自定义样式
 
 - 通过 `MeSwiper` 的属性 `height` 来设置组件的高度。
@@ -102,8 +90,6 @@ const listData = Object.freeze([
 
 - 通过 `MeSwiper` 的属性 `loop` 来设置组件的自动轮播状态，默认为 false。
 - 通过 `MeSwiper` 的属性 `delay` 来设置组件的轮播的延迟时间，默认为 3000。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -132,8 +118,6 @@ const listData = Object.freeze([
   </me-swiper>
 </template>
 ```
-
-:::
 
 ## API
 

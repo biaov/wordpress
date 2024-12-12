@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeVirtualList.css'
 
 createApp(App).use(MeVirtualList).mount('#app')
 ```
-
-:::
 
 ## 复制
 
@@ -28,8 +24,6 @@ createApp(App).use(MeVirtualList).mount('#app')
 - 通过属性 `list` 来设置虚拟列表的数据。
 - 通过属性 `height` 来设置虚拟列表的高度。
 - 通过属性 `itemHeight` 来设置虚拟列表列表项的固定高度。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -71,13 +65,9 @@ const listData = ref(Array.from({ length: 100 }, () => ({ text: Random.cword(6, 
 </style>
 ```
 
-:::
-
 ### 加载更多
 
 - 通过自定义事件 `load-more` 来设置虚拟列表的数据加载更多。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -158,13 +148,9 @@ const onLoadMore = () => {
 </style>
 ```
 
-:::
-
 ### 自适应高度
 
 - 通过属性 `item-height` 的值为 0 时表示自适应高度。
-
-::: CopyCode
 
 ```vue
 <script>
@@ -210,8 +196,6 @@ const listData = ref(Array.from({ length: 100 }, () => ({ text: Random.cword(14,
 }
 </style>
 ```
-
-:::
 
 ## API
 

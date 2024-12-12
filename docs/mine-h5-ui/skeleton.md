@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeSkeleton.css'
 
 createApp(App).use(MeSkeleton).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,19 +24,13 @@ createApp(App).use(MeSkeleton).mount('#app')
 - 通过属性 `visible` 来设置组件的显示和隐藏，默认为 false。
 - 当属性 `visible` 为 false 时，显示插槽内容。
 
-::: CopyCode
-
 ```html
 <me-skeleton visible>为 false 时显示的内容</me-skeleton>
 ```
 
-:::
-
 ### 显示动画效果
 
 - 通过属性 `active` 来设置是否显示动画效果，默认为 false。
-
-::: CopyCode
 
 ```html
 <me-skeleton visible active />
@@ -50,7 +40,7 @@ createApp(App).use(MeSkeleton).mount('#app')
 
 - 通过属性 `title` 来设置是否显示标题占位图，默认为 false。
 
-::: CopyCode
+CopyCode
 
 ```html
 <me-skeleton visible title />
@@ -60,8 +50,6 @@ createApp(App).use(MeSkeleton).mount('#app')
 
 - 通过属性 `avatar` 来设置是否显示头像占位图，默认为 false。
 
-::: CopyCode
-
 ```html
 <me-skeleton visible avatar />
 ```
@@ -70,7 +58,7 @@ createApp(App).use(MeSkeleton).mount('#app')
 
 - 通过属性 `row` 来设置行数，默认为 3。
 
-::: CopyCode
+CopyCode
 
 ```html
 <me-skeleton visible :row="4" />

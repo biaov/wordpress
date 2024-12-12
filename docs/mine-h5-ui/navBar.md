@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeNavBar.css'
 
 createApp(App).use(MeNavBar).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -29,20 +25,14 @@ createApp(App).use(MeNavBar).mount('#app')
 - 通过 `left-text` 属性来设置左侧按钮的内容，默认为空字符串。
 - 通过 `right-text` 属性来设置右侧按钮的内容，默认为空字符串。
 
-::: CopyCode
-
 ```html
 <me-nav-bar title="标题" left-text="返回" right-text="按钮" />
 ```
-
-:::
 
 ### 插槽使用
 
 - 通过 slots 使用插槽。
 - 注意：当使用插槽时，请不要使用 `right-text` 属性，因为 `right-text` 属性的权重高于 Slots。
-
-::: CopyCode
 
 ```html
 <me-nav-bar title="标题" :left-arrow="false">
@@ -50,13 +40,9 @@ createApp(App).use(MeNavBar).mount('#app')
 </me-nav-bar>
 ```
 
-:::
-
 ### 自定义样式
 
 - 通过 `styles` 属性来设置自定义样式，默认值是一个 Object，[查看详情](#Styles)。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -90,8 +76,6 @@ const styles = Object.freeze({
 })
 </script>
 ```
-
-:::
 
 ## API
 

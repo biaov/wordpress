@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeForm.css'
 
 createApp(App).use(MeForm).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,8 +23,6 @@ createApp(App).use(MeForm).mount('#app')
 
 - 通过 `model` 属性来设置需要校验的内容，通过 `rules` 属性来设置匹配的规则，[rules 详情](#rules)。
 - 注意：只有当你同时设置 model 和 rules 属性时，校验才能生效。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -95,8 +89,6 @@ const onSubmit = ({ valid, message, value }) => {
 }
 </script>
 ```
-
-:::
 
 ## API
 

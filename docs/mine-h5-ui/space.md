@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeSpace.css'
 
 createApp(App).use(MeSpace).mount('#app')
 ```
-
-:::
 
 ## 复制
 
@@ -27,8 +23,6 @@ createApp(App).use(MeSpace).mount('#app')
 
 - 通过属性 `size` 来设置组件的间距大小，默认为 `10px`。
 
-::: CopyCode
-
 ```html
 <me-space size="10px">
   <div>1</div>
@@ -37,13 +31,9 @@ createApp(App).use(MeSpace).mount('#app')
 </me-space>
 ```
 
-:::
-
 ### 间距方向
 
 - 通过属性 `direction` 来设置组件的间距方向，默认为 `horizontal`。
-
-::: CopyCode
 
 ```html
 <me-space direction="vertical">
@@ -52,8 +42,6 @@ createApp(App).use(MeSpace).mount('#app')
   <div>3</div>
 </me-space>
 ```
-
-:::
 
 ## API
 

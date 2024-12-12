@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeGuide.css'
 
 createApp(App).use(MeGuide).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MeGuide).mount('#app')
 
 - 通过属性 `visible` 来设置组件的显示和隐藏，默认为 false。
 
-::: CopyCode
-
 ```vue
 <me-guide visible :list="['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1']" />
 ```
 
-:::
-
 ### 自定义开启
 
 - 通过 list 来设置引导图片。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -54,8 +44,6 @@ const list = Object.freeze(['https://dummyimage.com/750x1334/f60/fff&text=1', 'h
   <me-guide v-model:visible="visible" :list="list" />
 </template>
 ```
-
-:::
 
 ## API
 

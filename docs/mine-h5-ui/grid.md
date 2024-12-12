@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -15,8 +13,6 @@ import 'mine-h5-ui/styles/MeGridItem.css'
 
 createApp(App).use(MeGrid).use(MeGridItem).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -29,21 +25,15 @@ createApp(App).use(MeGrid).use(MeGridItem).mount('#app')
 - 通过在 `MeGrid` 组件上的 `cols` 属性来设置一行需要展示几个格子，默认为 4。
 - 通过在 `MeGridItem` 组件上的 `icon` 和 `text` 属性来设置里面的图标和内容。
 
-::: CopyCode
-
 ```html
 <me-grid :cols="4">
   <me-grid-item icon="icon-wechat" text="微信" />
 </me-grid>
 ```
 
-:::
-
 ### 自定义用法
 
 - 通过 `Slot` 来设置自定义内容。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -133,8 +123,6 @@ const handleLi = ({ text }) => {
 }
 </style>
 ```
-
-:::
 
 ## API
 

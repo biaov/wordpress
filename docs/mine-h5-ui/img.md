@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeImg.css'
 
 createApp(App).use(MeImg).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MeImg).mount('#app')
 
 - 通过 `src` 属性来设置图片。
 
-::: CopyCode
-
 ```html
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" />
 ```
 
-:::
-
 ### 自定义大小
 
 - 通过 `width` 和 `height` 属性来设置图片大小，默认宽为 40px，高为 auto。
-
-::: CopyCode
 
 ```html
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" width="45px" />
@@ -47,14 +37,10 @@ createApp(App).use(MeImg).mount('#app')
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" width="45px" height="45px" />
 ```
 
-:::
-
 ### 填充模式
 
 - 通过 `fill` 属性来设置图片填充模式。
 - 填充模式下默认高度为 40px。
-
-::: CopyCode
 
 ```html
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" fill="cover" />
@@ -62,30 +48,20 @@ createApp(App).use(MeImg).mount('#app')
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" fill="50% auto" />
 ```
 
-:::
-
 ### 倒角图片
 
 - 通过 `radius` 属性来设置图片的倒角，默认为 0。
-
-::: CopyCode
 
 ```html
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" radius="50%" />
 <me-img src="http://dummyimage.com/45x45/0079cb/fff.png&text=M" radius="6px" />
 ```
 
-:::
-
 ### 相对路径图片
-
-::: CopyCode
 
 ```html
 <me-img src="./image.png" radius="50%" />
 ```
-
-:::
 
 ## API
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MePreview.css'
 
 createApp(App).use(MePreview).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,8 +24,6 @@ createApp(App).use(MePreview).mount('#app')
 - 通过 API 直接调用即可。
 - 通过属性 `url` 来设置需要预览的图片。
 
-::: CopyCode
-
 ```vue
 <script lang="ts" setup>
 import { MePreview } from 'mine-h5-ui'
@@ -38,14 +32,10 @@ MePreview('https://dummyimage.com/300x300')
 </script>
 ```
 
-:::
-
 ### 自定义样式
 
 - 通过 API 直接调用即可。
 - 通过属性 `background` 来设置预览的遮罩层背景色，默认为 #000。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -57,8 +47,6 @@ MePreview({
 })
 </script>
 ```
-
-:::
 
 ## API
 

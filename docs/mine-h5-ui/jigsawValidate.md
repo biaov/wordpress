@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeJigsawValidate.css'
 
 createApp(App).use(MeJigsawValidate).mount('#app')
 ```
-
-:::
 
 ## 复制
 
@@ -27,38 +23,26 @@ createApp(App).use(MeJigsawValidate).mount('#app')
 
 - 通过属性 `url` 来设置组件的图片地址。
 
-::: CopyCode
-
 ```html
 <me-jigsaw-validate url="https://dummyimage.com/340x300/f60" />
 ```
-
-:::
 
 ### 自定义图片大小
 
 - 通过属性 `width` 来设置图片的宽度，默认为 `100%`。
 - 通过属性 `height` 来设置图片的高度，默认为 `300px`。
 
-::: CopyCode
-
 ```html
 <me-jigsaw-validate url="https://dummyimage.com/340x300/f60" width="300px" height="260px" />
 ```
-
-:::
 
 ### 是否开启随机位置
 
 - 通过属性 `random` 来设置组件的是否开启随机位置，默认为 `true`。
 
-::: CopyCode
-
 ```html
 <me-jigsaw-validate url="https://dummyimage.com/340x300/f60" :random="false" />
 ```
-
-:::
 
 ### 自定义滑块位置
 
@@ -86,8 +70,6 @@ export default {
 }
 ```
 
-::: CopyCode
-
 ```vue
 <script setup>
 const slideStyle = {
@@ -103,31 +85,21 @@ const slideStyle = {
 </template>
 ```
 
-:::
-
 ### 提示文字
 
 - 通过属性 `tips` 来设置组件的是否开启随机位置，默认为 `按住左边按钮向右拖动完成上方图像验证`。
-
-::: CopyCode
 
 ```html
 <me-jigsaw-validate url="https://dummyimage.com/340x300/f60" tips="这是一段提示文字" />
 ```
 
-:::
-
 ### 容错值
 
 - 通过属性 `range` 来设置组件的容错值，默认为 `5`。
 
-::: CopyCode
-
 ```html
 <me-jigsaw-validate url="https://dummyimage.com/340x300/f60" :range="20" />
 ```
-
-:::
 
 ## API
 

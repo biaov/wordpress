@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeMask.css'
 
 createApp(App).use(MeMask).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MeMask).mount('#app')
 
 - 通过属性 `visible` 来设置遮罩层的显示和隐藏。
 
-::: CopyCode
-
 ```html
 <me-mask visible="false" />
 ```
 
-:::
-
 ### 设置内容
 
 - 通过 slot 来设置内容。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -72,8 +62,6 @@ const visible = ref(false)
 }
 </style>
 ```
-
-:::
 
 ## API
 

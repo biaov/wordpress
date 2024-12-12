@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -16,8 +14,6 @@ import 'mine-h5-ui/styles/MeStepItem.css'
 createApp(App).use(MeStep).use(MeStepItem).mount('#app')
 ```
 
-:::
-
 ## 提示
 
 - 如果你觉得重新编写 HTML 结构麻烦，可以直接复制下面的代码。
@@ -27,8 +23,6 @@ createApp(App).use(MeStep).use(MeStepItem).mount('#app')
 ### 基础用法
 
 - 通过 `active` 属性来设置激活状态。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -48,13 +42,9 @@ const active = ref(['first'])
 </template>
 ```
 
-:::
-
 ### 主题类型
 
 - 通过 `type` 属性来设置主题类型，默认为 `primary`。
-
-::: CopyCode
 
 ```html
 <me-step :active="active" type="danger">
@@ -63,13 +53,9 @@ const active = ref(['first'])
 </me-step>
 ```
 
-:::
-
 ### 自定义主题
 
 - 通过 `color` 属性和 `active-color` 属性来设置自定义主题。
-
-::: CopyCode
 
 ```html
 <me-step :active="active" color="#ff66a6" active-color="#a079de">
@@ -78,13 +64,9 @@ const active = ref(['first'])
 </me-step>
 ```
 
-:::
-
 ### 自定义图标
 
 - 通过 `icon` 属性和 `active-icon` 属性来设置自定义图标。
-
-::: CopyCode
 
 ```html
 <me-step :active="active" icon="in_biyan" active-icon="in_zhengyan">
@@ -93,13 +75,9 @@ const active = ref(['first'])
 </me-step>
 ```
 
-:::
-
 ### 方向
 
 - 通过 `direction` 属性来设置方向，默认为 `horizontal`。
-
-::: CopyCode
 
 ```html
 <me-step :active="active" direction="vertical">
@@ -113,8 +91,6 @@ const active = ref(['first'])
   </me-step-item>
 </me-step>
 ```
-
-:::
 
 ## API
 

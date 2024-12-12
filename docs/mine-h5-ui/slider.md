@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeSlider.css'
 
 createApp(App).use(MeSlider).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,31 +23,21 @@ createApp(App).use(MeSlider).mount('#app')
 
 - 通过 `v-model` 指令来设置滑块的值。
 
-::: CopyCode
-
 ```html
 <me-slider v-model="value" />
 ```
-
-:::
 
 ### 自定义范围
 
 - 通过 `max` 和 `min` 属性来设置滑块的范围。max 和 min 属性的默认值分别为 100，0。
 
-::: CopyCode
-
 ```html
 <me-slider v-model="value" :max="50" :min="-50" />
 ```
 
-:::
-
 ### 自定义样式
 
 - 通过 `styles` 属性来设置滑块的样式。它是一个 Object。具体请[查看详情](#styles)。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -86,13 +72,9 @@ const styles = Object.freeze({
 </template>
 ```
 
-:::
-
 ### 自定义按钮
 
 - 通过 `is-btn` 属性 和 `slot` 来设置滑块的自定义按钮。默认为 false。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -126,19 +108,13 @@ const sliderValue = ref(30)
 </style>
 ```
 
-:::
-
 ### 禁用状态
 
 - 通过 `disabled` 属性来设置滑块的禁用状态。默认为 false。
 
-::: CopyCode
-
 ```html
 <me-slider v-model="value" :disabled="true" />
 ```
-
-:::
 
 ## API
 

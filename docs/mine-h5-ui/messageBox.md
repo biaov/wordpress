@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeMessageBox.css'
 
 createApp(App).use(MeMessageBox).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,21 +24,15 @@ createApp(App).use(MeMessageBox).mount('#app')
 - 通过 API 直接调用即可。
 - 通过 `type` 参数来设置弹出框的类型，可选值有 `MeMessageBox.alert`，`MeMessageBox.confirm`，`MeMessageBox.prompt`，`MeMessageBox.custom`，默认值为 alert。
 
-::: CopyCode
-
 ```js
 import { MeMessageBox } from 'mine-h5-ui'
 
 MeMessageBox.alert('至于未来会怎样，要走下去才知道，反正路还很长，天总会亮！')
 ```
 
-:::
-
 ### 确认弹出框
 
 - 直接调用确认弹出框的 API 即可。
-
-::: CopyCode
 
 ```js
 import { MeMessageBox, MeToast } from 'mine-h5-ui'
@@ -60,13 +50,9 @@ MeMessageBox.prompt({
 })
 ```
 
-:::
-
 ### 输入弹出框
 
 - 直接调用输入弹出框的 API 即可。
-
-::: CopyCode
 
 ```js
 import { MeMessageBox, MeToast } from 'mine-h5-ui'
@@ -82,13 +68,9 @@ MeMessageBox.prompt({
 })
 ```
 
-:::
-
 ### 自定义弹出框
 
 - 直接调用自定义弹出框的 API 即可。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -130,8 +112,6 @@ const handleClick = () => {
 }
 </style>
 ```
-
-:::
 
 ## API
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeTabBar.css'
 
 createApp(App).use(MeTabBar).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -26,8 +22,6 @@ createApp(App).use(MeTabBar).mount('#app')
 ### 基础用法
 
 - 通过 `list` 属性来设置组件数据，具体的[数据格式详情](#list)。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -67,14 +61,10 @@ const listData = Object.freeze([
 </template>
 ```
 
-:::
-
 ### 徽标提示
 
 - 通过 `dot` 和 `badge` 来设置组件右上角的点和徽标提示。
 - 注意：`dot` 的权重高于 `badge` 的权重。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -117,16 +107,12 @@ const listData = Object.freeze([
 </template>
 ```
 
-:::
-
 ### 自定义图标
 
 - 通过 `img` 和 `imgSelected` 来设置组件未选中和选中状态的图标。
 - 注意：
   - `img` 和 `imgSelected` 是成对出现的。
   - `icon` 的权重高于 `img` 和 `imgSelected` 的权重。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -170,14 +156,10 @@ const listData = Object.freeze([
 </template>
 ```
 
-:::
-
 ### 自定义颜色
 
 - 通过 `border-color` 和 `background` 属性来设置组件的背景颜色和上边框颜色，它们的默认分别为 #dcdfe6 和 #fff。
 - 通过 `color` 和 `color-selected` 属性来设置组件未选中和选中状态的颜色，它们的默认分别为 #949494 和 #409eff。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -238,8 +220,6 @@ const listData = Object.freeze([
   <me-tab-bar :list="listData" v-bind="colors" />
 </template>
 ```
-
-:::
 
 ## API
 

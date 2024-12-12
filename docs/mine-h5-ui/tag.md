@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeTag.css'
 
 createApp(App).use(MeTag).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,25 +23,17 @@ createApp(App).use(MeTag).mount('#app')
 
 - 通过属性 `type` 来设置组件的主题类型，默认为 primary。
 
-::: CopyCode
-
 ```html
 <me-tag type="primary" />
 ```
-
-:::
 
 ### 空心设置
 
 - 通过属性 `plain` 来设置组件的空心状态，默认为 false。
 
-::: CopyCode
-
 ```html
 <me-tag type="success" plain />
 ```
-
-:::
 
 ### 自定义样式
 
@@ -54,38 +42,26 @@ createApp(App).use(MeTag).mount('#app')
 - 通过属性 `color` 来设置组件主题样式。
 - 通过属性 `radius` 来设置组件倒角，默认为 4。
 
-::: CopyCode
-
 ```html
 <me-tag :width="100" :height="40" :radius="20" color="#6DA1F0" />
 ```
-
-:::
 
 ### 自定义内容
 
 - 通过属性 `text` 来设置组件内容，默认为 `标签`。
 - 通过属性 `text-color` 来设置组件内容的字体颜色。
 
-::: CopyCode
-
 ```html
 <me-tag text="注意" text-color="rgba(255,255,255,0.6)" />
 ```
-
-:::
 
 ### 关闭状态
 
 - 通过属性 `closeable` 来设置组件的关闭状态，默认为 false。
 
-::: CopyCode
-
 ```html
 <me-tag type="danger" closeable />
 ```
-
-:::
 
 ## API
 

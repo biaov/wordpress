@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -15,8 +13,6 @@ import 'mine-h5-ui/styles/MeTabItem.css'
 
 createApp(App).use(MeTab).use(MeTabItem).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,8 +24,6 @@ createApp(App).use(MeTab).use(MeTabItem).mount('#app')
 
 - 通过 `v-model` 来设置活动项。
 - 通过设置 `MeTabItem` 的 `title` 属性来设置标签内容。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -77,8 +71,6 @@ const onChange = index => {
   </me-tab>
 </template>
 ```
-
-:::
 
 ## API
 

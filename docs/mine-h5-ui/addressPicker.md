@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeAddressPicker.css'
 
 createApp(App).use(MeAddressPicker).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,25 +23,17 @@ createApp(App).use(MeAddressPicker).mount('#app')
 
 - 通过 `v-model` 绑定点击确定按钮之后选中的地址，通过 `visible` 属性设置地址选择器的显示和隐藏。
 
-::: CopyCode
-
 ```html
 <me-address-picker v-model="value" :visible="true" />
 ```
-
-:::
 
 ### 自定义分隔符
 
 - 通过 `separator` 属性设置 value 的分隔符，默认值为 `-`。
 
-::: CopyCode
-
 ```html
 <me-address-picker v-model="value" :visible="true" />
 ```
-
-:::
 
 ## API
 

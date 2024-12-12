@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeIndexBar.css'
 
 createApp(App).use(MeIndexBar).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,8 +23,6 @@ createApp(App).use(MeIndexBar).mount('#app')
 
 - 通过 `list` 属性来设置索引栏数据，默认为国家数据。
 - 注意：如果要使用自定义数据，则必需按照固定的数据格式。
-
-::: CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -45,13 +39,9 @@ const onClick = item => {
 </template>
 ```
 
-:::
-
 #### 数据格式
 
 - 此数据为必需的，你可以在此基础上加其它的属性。
-
-::: CopyCode
 
 ```js
 export default [
@@ -61,8 +51,6 @@ export default [
   }
 ]
 ```
-
-:::
 
 ## API
 

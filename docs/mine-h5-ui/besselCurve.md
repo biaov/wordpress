@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeBesselCurve.css'
 
 createApp(App).use(MeBesselCurve).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -26,8 +22,6 @@ createApp(App).use(MeBesselCurve).mount('#app')
 ### 基础用法
 
 - 通过属性 `list` 来设置需要绘制的线，默认值为 `[]`。
-
-::: CopyCode
 
 ```vue
 <script setup>
@@ -52,43 +46,29 @@ const list = ref([
 </template>
 ```
 
-:::
-
 ### 对齐方向
 
 - 通过属性 `direction` 来设置起始和结尾的方向，默认值为 `horizontal`。
-
-::: CopyCode
 
 ```html
 <me-bessel-curve :list="list" direction="vertical" />
 ```
 
-:::
-
 ### 线的颜色和大小
 
 - 通过属性 `color` 和 `stroke-width` 来设置线颜色和大小。
-
-::: CopyCode
 
 ```html
 <me-bessel-curve :list="list" color="#f56c6c" :stroke-width="2" />
 ```
 
-:::
-
 ### 隐藏箭头
 
 - 通过属性 `arrow` 来设置箭头的显示和隐藏，默认值为 `false`。
 
-::: CopyCode
-
 ```html
 <me-bessel-curve :list="list" :arrow="false" />
 ```
-
-:::
 
 ## API
 

@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeToast.css'
 
 createApp(App).use(MeToast).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,15 +23,11 @@ createApp(App).use(MeToast).mount('#app')
 
 - 通过 API 直接调用即可。
 
-::: CopyCode
-
 ```ts
 import { MeToast } from 'mine-h5-ui'
 
 MeToast('显示信息')
 ```
-
-:::
 
 ## API
 

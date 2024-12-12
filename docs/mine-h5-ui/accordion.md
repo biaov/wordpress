@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -15,8 +13,6 @@ import 'mine-h5-ui/styles/MeAccordionItem.css'
 
 createApp(App).use(MeAccordion).use(MeAccordionItem).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -28,8 +24,6 @@ createApp(App).use(MeAccordion).use(MeAccordionItem).mount('#app')
 
 - 通过 `v-model` 来绑定 `MeAccordion` 组件的当前状态。
 - 通过属性 `label` 和属性 `index` 来设置 `MeAccordionItem` 组件的标题和索引，默认值分别为 `""` 和当前索引。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -96,8 +90,6 @@ const listData = Object.freeze([
 }
 </style>
 ```
-
-:::
 
 ## API
 

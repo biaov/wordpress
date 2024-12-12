@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeKeyboard.css'
 
 const app = createApp(App).use(MeKeyboard).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,32 +23,22 @@ const app = createApp(App).use(MeKeyboard).mount('#app')
 
 - 通过 `v-model` 指令来设置键盘显示。
 
-::: CopyCode
-
 ```html
 <me-keyboard v-model:visible="isShow" />
 ```
 
-:::
-
 ### 选择主题样式
 
 - 通过 `skin-type` 属性来设置数字键盘的主题样式，默认为 gray。
-
-::: CopyCode
 
 ```html
 <me-keyboard v-model:visible="isShow" skin-type="gray" />
 <me-keyboard v-model:visible="isShow" skin-type="dark" />
 ```
 
-:::
-
 ### 自定义主题样式
 
 - 通过 `skin-style` 属性来设置数字键盘的主题样式。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -87,8 +73,6 @@ const skinStyle = Object.freeze({
 })
 </script>
 ```
-
-:::
 
 ## API
 

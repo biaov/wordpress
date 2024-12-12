@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeUpload.css'
 
 createApp(App).use(MeUpload).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,19 +23,13 @@ createApp(App).use(MeUpload).mount('#app')
 
 - 注意：只能上传后缀名为 `.(svg|gif|png|jpe?g)` 的图片。
 
-::: CopyCode
-
 ```html
 <me-upload />
 ```
 
-:::
-
 ### 展示图片并预览
 
 - 通过 `v-model` 来绑定展示图片列表的内容，通过 `preview` 属性来设置图片是否可预览，preview 默认为 true。
-
-::: CopyCode
 
 ```vue
 <template>
@@ -57,67 +47,45 @@ const fileList = [
 </script>
 ```
 
-:::
-
 ### 限制上传数量
 
 - 通过 `max-count` 属性来设置上传图片数量，默认为 1000。
-
-::: CopyCode
 
 ```html
 <me-upload :max-count="3" />
 ```
 
-:::
-
 ### 限制上传大小
 
 - 通过 `max-size` 属性来设置上传图片大小，单位为 B，默认为 2 \* 1024 \* 1024 = 2M。
-
-::: CopyCode
 
 ```html
 <me-upload :max-size="4*1024*1024" />
 ```
 
-:::
-
 ### 是否允许多选
 
 - 通过 `multiple` 属性来设置上传图片是否允许多选，默认为 false。
-
-::: CopyCode
 
 ```html
 <me-upload multiple />
 ```
 
-:::
-
 ### 删除图片按钮的显示状态
 
 - 通过 `deletable` 属性来设置删除图片按钮的显示状态，默认为 true。
-
-::: CopyCode
 
 ```html
 <me-upload :deletable="false" />
 ```
 
-:::
-
 ### 禁用状态
 
 - 通过 `disabled` 属性来设置上传图片禁用状态，默认为 false。
 
-::: CopyCode
-
 ```html
 <me-upload disabled />
 ```
-
-:::
 
 ## API
 

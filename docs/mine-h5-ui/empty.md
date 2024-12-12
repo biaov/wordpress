@@ -4,8 +4,6 @@
 
 ## 按需引入
 
-::: CopyCode
-
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,8 +12,6 @@ import 'mine-h5-ui/styles/MeEmpty.css'
 
 createApp(App).use(MeEmpty).mount('#app')
 ```
-
-:::
 
 ## 提示
 
@@ -27,49 +23,33 @@ createApp(App).use(MeEmpty).mount('#app')
 
 - 通过属性 `text` 来设置组件的文本内容。
 
-::: CopyCode
-
 ```html
 <me-empty text="暂无数据" />
 ```
-
-:::
 
 ### 错误类型
 
 - 通过属性 `type` 来设置组件的错误类型，可选值为 `default / network / search`, 默认值为 `default`。
 
-::: CopyCode
-
 ```html
 <me-empty type="network" text="一帘清雨，垂下了一汪泪，一份缠绵，揉断了心碎。" />
 ```
-
-:::
 
 ### 自定义图标
 
 - 通过属性 `icon-name` 来设置组件的自定义图标，必须是 iconfont 图标，不需要加 `icon-` 前缀。
 
-::: CopyCode
-
 ```html
 <me-empty icon-name="Loading" text="快乐很简单，就是春天的鲜花，夏天的绿荫，秋天的野果，冬天的漫天飞雪。" />
 ```
-
-:::
 
 ### 自定义图片
 
 - 通过属性 `url` 来设置组件的自定义图标。
 
-::: CopyCode
-
 ```html
 <me-empty url="'../assets/empty.png'" text="用心聆听，深深呼吸，烟花雨，梨花月，寄一缕风的香魂，远离喧嚣。" />
 ```
-
-:::
 
 ## API
 

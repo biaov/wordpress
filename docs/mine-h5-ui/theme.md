@@ -22,43 +22,27 @@
 
 #### 从 Github 上去 Clone 项目下来
 
-::: CopyCode
-
 ```sh
 git clone https://github.com/biaov/mine-h5-ui.git --depth=1
 ```
-
-:::
 
 #### 或者在 Github 上下载 ZIP 包到本地
 
 - 直接在浏览器输入以下地址即可下载。
 
-::: CopyCode
-
 ```txt
 https://codeload.github.com/biaov/mine-h5-ui/zip/main
 ```
 
-:::
-
 #### 进入项目更目录安装相关依赖
-
-::: CopyCode
 
 ```sh
 npm i
 ```
 
-:::
-
 - 安装 [👉git](https://git-scm.com/)。
 - 下载、安装、VSCode 打开项目等所有步骤。
-
-::: CopyCode
 
 ```sh
 git clone https://github.com/biaov/mine-h5-ui.git --depth=1 && cd mine-h5-ui && npm i && code ./
 ```
-
-:::
