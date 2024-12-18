@@ -6,21 +6,37 @@ const { dirname } = import.meta
 const mineh5uiProject = resolve(dirname, '../../mine-h5-ui/v2/examples')
 
 /**
+ * 标题转路径
+ */
+const titleToPath = title => {
+  const group = title.split(' ')
+  const [name] = group
+
+  if (group.includes('API')) return name === 'API' ? 'api' : 'composable'
+  return name[0].toLowerCase() + name.slice(1)
+}
+
+/**
  * 复制配置文件
  */
 const cpConfig = async () => {
-  const navConfigName = 'nav.config'
-  const tempConfigPath = `../temp/${navConfigName}.js`
-  cpSync(resolve(mineh5uiProject, `config/${navConfigName}.ts`), resolve(dirname, tempConfigPath))
-  const { default: config } = await import(tempConfigPath)
-
+  const navConfigName = 'routes.json'
+  const tempConfigPath = `../temp/${navConfigName}`
+  cpSync(resolve(mineh5uiProject, `config/${navConfigName}`), resolve(dirname, tempConfigPath))
+  const { default: config } = await import(tempConfigPath, { with: { type: 'json' } })
   const mineh5ui = Object.entries(config).map(([key, value]) => {
-    const items = value.map(item =>
-      item.items?.length ? { text: item.meta.title, items: item.items.map(item => item.name) } : item.name
-    )
+    let items
+    if (Array.isArray(value)) {
+      items = value.map(titleToPath)
+    } else {
+      items = Object.entries(value).map(([key, value]) => {
+        const newItems = value.map(titleToPath)
+        return { text: key, items: newItems }
+      })
+    }
+
     return { text: key, items }
   })
-
   writeFileSync(resolve(dirname, '../docs/.vitepress/sidebar/mineh5ui.json'), JSON.stringify(mineh5ui, null, 2))
 }
 

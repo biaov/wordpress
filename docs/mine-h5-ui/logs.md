@@ -14,7 +14,28 @@
 
 :::TimeLine
 
-## v2.11.0 - 最新版本
+## v2.12.0 - 最新版本
+
+`2024-12-18`
+
+- 🔥 新增[颜色选择器 MeColorPicker](/mine-h5-ui/datetimePicker) 组件
+- 🔥 新增[文案滑动动画 MeTextAnimation](/mine-h5-ui/textAnimation) 组件
+- 🔥 新增 [Style 样式类](/mine-h5-ui/style) `me-bg-opacity`
+- 🔥 新增 [useColorTransform](/mine-h5-ui/composable) 颜色转换
+- 🔥 新增 [useMoveHandle](/mine-h5-ui/composable) 移动操作处理
+- 🔥 新增 [useSameTarget](/mine-h5-ui/composable) 相同的目标节点点击事件
+- 🔥 新增 [useCssVar](/mine-h5-ui/composable) 对象转 CSS 变量
+- 🔥 新增依赖 `vi-canvas-mock` 用于处理单元测试 canvas 问题
+- ⚙️ 更新依赖版本
+- ⚙️ 优化 `useLocked` 方法 this 指向问题
+- ⚙️ 优化 api 导出
+- ⚙️ 拆分 MeComposable 里面的方法
+- 🐞 修复移动端刷新回退到主页的操作
+- 🐞 修复组件 MeSpace 插槽内不能循环的问题
+- 🐞 修复部分组件的单元测试 title
+- 🐞 修复 eslint 部分规则冲突问题
+
+## v2.11.0
 
 `2024-09-19`
 

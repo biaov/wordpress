@@ -4,16 +4,12 @@
 
 ## 按需引入
 
-:::CopyCode
-
 ```js
 import Vue from 'vue'
 import { MeDrag } from 'mine-h5-ui'
 
 Vue.use(MeDrag)
 ```
-
-:::
 
 ## 复制
 
@@ -24,8 +20,6 @@ Vue.use(MeDrag)
 ### 基础用法
 
 - 通过属性 `list` 来设置组件的列表数据。
-
-:::CopyCode
 
 ```vue
 <script lang="ts" setup>
@@ -71,8 +65,6 @@ const current = ref(0)
   </me-drag>
 </template>
 ```
-
-:::
 
 ## API
 

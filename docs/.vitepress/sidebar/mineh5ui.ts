@@ -28,6 +28,5 @@ export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
   })
 
   config.unshift(item)
-
   return config as DefaultTheme.SidebarItem[]
 }

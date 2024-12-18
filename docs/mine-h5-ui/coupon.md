@@ -4,16 +4,12 @@
 
 ## 按需引入
 
-:::CopyCode
-
 ```js
 import Vue from 'vue'
 import { MeCoupon } from 'mine-h5-ui'
 
 Vue.use(MeCoupon)
 ```
-
-:::
 
 ## 复制
 
