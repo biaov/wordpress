@@ -14,8 +14,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Read RELEASES.md
-        id: read-release
+      - name: Read RELEASE.md
         run: |
           TODAY=$(date '+%Y-%m-%d')
 
@@ -23,7 +22,7 @@ jobs:
 
           echo -e "\`$TODAY\`\n" >> $GITHUB_ENV
 
-          cat RELEASES.md >> $GITHUB_ENV
+          cat RELEASE.md >> $GITHUB_ENV
 
           echo "EOF" >> $GITHUB_ENV
         env:
