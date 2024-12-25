@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "3.2.2-beta.2",
+  "version": "3.2.2-beta.3",
   "description": "一个基于 `vitepress` 搭建的个人博客 👍",
   "scripts": {
     "start": "npm run dev",
@@ -9,7 +9,7 @@
     "preview": "vitepress preview docs",
     "prettier": "prettier --write '**/*.{js,less,md,json}'",
     "sync-mineh5ui": "node scripts/sync-mineh5ui",
-    "tag": "node scripts/tag.js --trace-warnings"
+    "tag": "node scripts/tag.js"
   },
   "repository": {
     "type": "git",
