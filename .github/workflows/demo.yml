@@ -19,7 +19,6 @@ jobs:
           github_user_name: biaov
           outputs: |
             dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: push snake.svg to the main branch
