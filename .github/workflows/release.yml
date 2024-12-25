@@ -12,8 +12,6 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
-      - name: Print all environment variables
-        run: env
       - name: Checkout
         uses: actions/checkout@v4
         if: startsWith(github.ref, 'refs/tags/')
@@ -23,13 +21,12 @@ jobs:
         run: |
           TODAY=$(date '+%Y-%m-%d')
 
-          echo "RELEASE_BODY<<EOF" >> $GITHUB_ENV
+          FILE_CONTENT=$(cat RELEASE.md)
+          
+          RELEASE_BODY="${TODAY}\n${FILE_CONTENT}"
+          
+          echo -e "RELEASE_BODY=${RELEASE_BODY}" >> $GITHUB_ENV
 
-          echo -e "$TODAY\n" >> $GITHUB_ENV
-
-          cat RELEASE.md >> $GITHUB_ENV
-
-          echo "EOF" >> $GITHUB_ENV
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release
