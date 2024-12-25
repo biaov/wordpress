@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "3.2.2-beta.3",
+  "version": "3.2.2-beta.5",
   "description": "一个基于 `vitepress` 搭建的个人博客 👍",
   "scripts": {
     "start": "npm run dev",
