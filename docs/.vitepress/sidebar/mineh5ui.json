@@ -53,7 +53,7 @@
           "messageBox",
           "dialog",
           "shareSheet",
-          "swiperCell",
+          "swipeCell",
           "floatButton"
         ]
       },
