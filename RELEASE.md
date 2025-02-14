@@ -1,5 +1,5 @@
-`2025-01-14`
+`2025-02-14`
 
-- 🔥 新增博文[使用 selenium-webdriver 开发 Web 自动 UI 测试程序](https://wordpress.biaov.cn/docs/34.html)
-- ⚙️ 同步 [mine-h5-ui](https://mineh5ui.biaov.cn/v2) 文档
+- 🔥 新增博文 [两步在 Vite 中配置 Tailwindcss](https://wordpress.biaov.cn/docs/35.html)
 - ⚙️ 更新依赖版本
+- 🐞 修复图片问题
