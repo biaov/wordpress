@@ -39,7 +39,8 @@
           "datetimePicker",
           "addressPicker",
           "upload",
-          "form"
+          "form",
+          "calendar"
         ]
       },
       {
