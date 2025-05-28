@@ -37,9 +37,9 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
-    "@types/node": "^22.13.5",
-    "prettier": "^3.5.2",
-    "strip-json-comments": "^5.0.1",
+    "@types/node": "^22.15.23",
+    "prettier": "^3.5.3",
+    "strip-json-comments": "^5.0.2",
     "vitepress": "^1.6.3"
   }
 }

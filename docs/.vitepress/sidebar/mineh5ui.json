@@ -99,7 +99,9 @@
           "drag",
           "coupon",
           "mspaint",
-          "jigsawValidate"
+          "captcha",
+          "splitter",
+          "turnPage"
         ]
       }
     ]
