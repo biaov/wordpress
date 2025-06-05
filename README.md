@@ -24,7 +24,7 @@ npm start
 ### 打包
 
 ```sh
-npm build
+npm run build
 ```
 
 ## 技术栈
