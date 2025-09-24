@@ -40,7 +40,8 @@
           "addressPicker",
           "upload",
           "form",
-          "calendar"
+          "calendar",
+          "stepper"
         ]
       },
       {
