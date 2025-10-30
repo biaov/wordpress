@@ -15,6 +15,7 @@ const appendItems = (item: ConfigItem | string) => {
   if (typeof item === 'string') {
     return getTitle(resolve(import.meta.dirname, `../../mine-h5-ui/${item}.md`), prefixURL + item)
   } else if (item.items) {
+    item.collapsed = false
     item.items = item.items.map(appendItems) as ConfigItem[]
     return item
   }
@@ -24,7 +25,10 @@ export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
   prefixURL = item.link
 
   config.forEach(it => {
-    it.items && (it.items = it.items.map(appendItems) as ConfigItem[])
+    if (it.items) {
+      it.collapsed = false
+      it.items = it.items.map(appendItems) as ConfigItem[]
+    }
   })
 
   config.unshift(item)

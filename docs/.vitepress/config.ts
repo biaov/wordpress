@@ -10,6 +10,11 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { name: 'referrer', content: 'no-referrer' }]
   ],
+  markdown: {
+    languageAlias: {
+      conf: 'bash'
+    }
+  },
   ignoreDeadLinks: true,
   themeConfig: {
     logo: '/logo.svg',
@@ -117,8 +122,8 @@ export default defineConfig({
     search,
     notFound: {
       title: '404 页面不存在',
-      quote:'很抱歉，我们没有找到您要查找的页面。',
-      linkText: '返回首页',
+      quote: '很抱歉，我们没有找到您要查找的页面。',
+      linkText: '返回首页'
     }
   },
   outDir: resolve(import.meta.dirname, '../../dist'),
