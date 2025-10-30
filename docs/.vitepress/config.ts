@@ -114,7 +114,12 @@ export default defineConfig({
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
-    search
+    search,
+    notFound: {
+      title: '404 页面不存在',
+      quote:'很抱歉，我们没有找到您要查找的页面。',
+      linkText: '返回首页',
+    }
   },
   outDir: resolve(import.meta.dirname, '../../dist'),
   sitemap: {
