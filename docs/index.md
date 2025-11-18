@@ -7,13 +7,13 @@ hero:
   tagline: 让你在使用 vitepress 能够快速的搭建个人网站
   actions:
     - theme: brand
-      text: 查看博客 →
+      text: 👀 查看博客 →
       link: /docs/
     - theme: alt
-      text: mine-h5-ui
+      text: 👉 mine-h5-ui
       link: /mine-h5-ui/
     - theme: alt
-      text: 源码地址 →
+      text: 😺 源码地址 →
       link: https://github.com/biaov/wordpress
   image:
     src: /logo.svg
@@ -31,7 +31,7 @@ features:
 
 ### 克隆项目
 
-```sh
+```sh [git]
 git clone https://github.com/biaov/wordpress.git --depth=1
 ```
 
@@ -70,6 +70,17 @@ pnpm start
 
 # 打包项目
 pnpm build
+```
+
+```sh [bun]
+# 安装依赖
+bun i
+
+# 启动项目
+bun start
+
+# 打包项目
+bun build
 ```
 
 :::

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { resolve } from 'path'
+import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 import { search } from './search'
 import sidebar from './sidebar'
 
@@ -13,6 +14,9 @@ export default defineConfig({
   markdown: {
     languageAlias: {
       conf: 'bash'
+    },
+    config(md) {
+      md.use(groupIconMdPlugin)
     }
   },
   ignoreDeadLinks: true,
@@ -129,5 +133,14 @@ export default defineConfig({
   outDir: resolve(import.meta.dirname, '../../dist'),
   sitemap: {
     hostname: 'https://wordpress.biaov.cn/'
+  },
+  vite: {
+    plugins: [
+      groupIconVitePlugin({
+        customIcon: {
+          git: localIconLoader(import.meta.url, '../assets/git.svg')
+        }
+      })
+    ]
   }
 })

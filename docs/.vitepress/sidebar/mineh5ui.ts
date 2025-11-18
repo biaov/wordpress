@@ -21,6 +21,11 @@ const appendItems = (item: ConfigItem | string) => {
   }
 }
 
+const keyEmoji = {
+  指南: '🧭',
+  组件: '🗂️',
+  封装: '🔒'
+}
 export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
   prefixURL = item.link
 
@@ -29,6 +34,11 @@ export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
       it.collapsed = false
       it.items = it.items.map(appendItems) as ConfigItem[]
     }
+    Object.entries(keyEmoji).some(([key, value]) => {
+      const result = it.text === key
+      result && (it.text = `${value} ${it.text}`)
+      return result
+    })
   })
 
   config.unshift(item)
