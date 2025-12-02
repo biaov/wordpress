@@ -6,6 +6,7 @@
       "install",
       "start",
       "theme",
+      "var",
       "develop",
       "logs"
     ]
@@ -28,6 +29,7 @@
         "text": "表单组件",
         "items": [
           "input",
+          "textarea",
           "radio",
           "checkbox",
           "switch",
@@ -67,7 +69,8 @@
           "navBar",
           "tab",
           "tabBar",
-          "pullRefresh"
+          "pullRefresh",
+          "pagination"
         ]
       },
       {

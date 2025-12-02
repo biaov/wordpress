@@ -14,7 +14,23 @@
 
 :::TimeLine
 
-## v2.16.0 - 最新版本
+## v2.17.0 - 最新版本
+
+`2025-12-02`
+
+- 🔥 新增组件 [MeTextarea 文本域](/mine-h5-ui/textarea)
+- 🔥 新增组件 [MePagination 分页器](/mine-h5-ui/pagination)
+- 🔥 新增 [useFormState](/mine-h5-ui/composable) 表单状态管理
+- 🐞 修复 `MeStepper` 组件兼容性问题
+- 🐞 修复重置样式的影响
+- ⚙️ `useLocked` 新增业务处理方法
+- ⚙️ 更新 `vitest` 由 `3.x` -> `4.x`
+- ⚙️ 版本更新
+- ⚙️ 完善全局样式变量文档
+- ⚙️ 调整文档整体布局和样式
+- 🐞 修复文档路径问题
+
+## v2.16.0
 
 `2025-09-09`
 
