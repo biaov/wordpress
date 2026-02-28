@@ -77,7 +77,7 @@
         "text": "展示组件",
         "items": [
           "progressBar",
-          "accordion",
+          "collapse",
           "countDown",
           "divider",
           "empty",
