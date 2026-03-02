@@ -1,6 +1,4 @@
-`2026-02-28`
+`2026-03-02`
 
-- 🔥 新增博文 [Uni-App 离线打包 Android 端](https://wordpress.biaov.cn/docs/40.html)
-- ⚙️ 同步 [mine-h5-ui](https://mineh5ui.biaov.cn/v2/) 文档
+- 🔥 新增博文 [Uni-App 开发本地音乐播放器 Android 软件](https://wordpress.biaov.cn/docs/41.html)
 - 更新依赖版本
-- 更新依赖 `@types/node` 由 `24.x` -> `25.x`
