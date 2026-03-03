@@ -1,4 +1,3 @@
-`2026-03-02`
+`2026-03-03`
 
-- 🔥 新增博文 [Uni-App 开发本地音乐播放器 Android 软件](https://wordpress.biaov.cn/docs/41.html)
-- 更新依赖版本
+- 🔥 新增博文 [开发一个简单 Claude Code 模型切换器](https://wordpress.biaov.cn/docs/42.html)
