@@ -32,8 +32,7 @@ const app = createApp(App).use(MeKeyboard).mount('#app')
 - 通过 `skin-type` 属性来设置数字键盘的主题样式，默认为 gray。
 
 ```html
-<me-keyboard v-model:visible="isShow" skin-type="gray" />
-<me-keyboard v-model:visible="isShow" skin-type="dark" />
+<me-keyboard v-model:visible="isShow" skin-type="gray" /> <me-keyboard v-model:visible="isShow" skin-type="dark" />
 ```
 
 ### 自定义主题样式

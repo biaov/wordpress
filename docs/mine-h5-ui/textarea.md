@@ -40,8 +40,7 @@ createApp(App).use(MeTextarea).mount('#app')
 - 通过属性 `readonly` 和 `disabled` 设置组件的只读和禁用状态。
 
 ```html
-<me-textarea readonly />
-<me-textarea disabled />
+<me-textarea readonly /> <me-textarea disabled />
 ```
 
 ## API

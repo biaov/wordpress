@@ -32,7 +32,12 @@
 --me-bg-item: #ededed;
 --me-bg-mask: rgba(0, 0, 0, 0.6);
 --me-bg-con-reduce: color-mix(in srgb, var(--me-bg-img) 36%, transparent);
---me-bg-img-opacity: conic-gradient(rgba(0, 0, 0, 0.06) 0 25%, transparent 0 50%, rgba(0, 0, 0, 0.06) 0 75%, transparent 0); // 透明层
+--me-bg-img-opacity: conic-gradient(
+  rgba(0, 0, 0, 0.06) 0 25%,
+  transparent 0 50%,
+  rgba(0, 0, 0, 0.06) 0 75%,
+  transparent 0
+); // 透明层
 
 // 边框
 --me-border-default: #dcdfe6;
@@ -56,7 +61,8 @@
 // 阴影
 --me-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
 --me-shadow-circle-sm: inset 0 0 1px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.06);
---me-shadow-box-secondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+--me-shadow-box-secondary:
+  0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
 
 // 动画
 --me-animation-hover: all 0.3s ease;
