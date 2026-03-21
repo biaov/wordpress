@@ -1,3 +1,3 @@
-`2026-03-03`
+`2026-03-21`
 
-- 🔥 新增博文 [开发一个简单 Claude Code 模型切换器](https://wordpress.biaov.cn/docs/42.html)
+- 🔥 新增博文 [汉化 Claude Code 的命令提示](https://wordpress.biaov.cn/docs/43.html)
