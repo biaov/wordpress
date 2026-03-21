@@ -37,7 +37,14 @@ createApp(App).use(MeMspaint).mount('#app')
 - 通过 `lineWidth` 属性来设置组件的线条大小，默认为 `1`。
 
 ```html
-<me-mspaint width="260px" height="200px" background="#000" border-style="5px dashed #f60" stroke-style="#fff" line-width="3" />
+<me-mspaint
+  width="260px"
+  height="200px"
+  background="#000"
+  border-style="5px dashed #f60"
+  stroke-style="#fff"
+  line-width="3"
+/>
 ```
 
 ## API
