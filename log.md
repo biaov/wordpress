@@ -1,5 +1,5 @@
-`2026-03-21`
+`2026-06-29`
 
-- 🔥 新增博文 [汉化 Claude Code 的命令提示](https://wordpress.biaov.cn/docs/43.html)
+- 🔥 新增博文 [Claude Code 的从 0 配置](https://wordpress.biaov.cn/docs/44.html)
 - ⚙️ 更新依赖版本
-- ⚙️ 调整发布文件 由 `RELEASE.txt` -> `log.md`
+- ⚙️ 依赖 `@types/node` 由 `25.x` -> `26.x`

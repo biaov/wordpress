@@ -37,10 +37,10 @@
   },
   "homepage": "http://wordpress.biaov.cn/",
   "devDependencies": {
-    "@types/node": "^25.3.3",
-    "prettier": "^3.8.1",
+    "@types/node": "^26.0.1",
+    "prettier": "^3.9.1",
     "strip-json-comments": "^5.0.3",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-group-icons": "^1.7.1"
+    "vitepress-plugin-group-icons": "^1.7.5"
   }
 }
