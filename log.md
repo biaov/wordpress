@@ -1,5 +1,4 @@
-`2026-06-29`
+`2026-10-16`
 
-- 🔥 新增博文 [Claude Code 的从 0 配置](https://wordpress.biaov.cn/docs/44.html)
+- 🔥 新增博文 [使用 Windows 自带的 VHDX + BitLocker 加密学习资料](https://wordpress.biaov.cn/docs/45.html)
 - ⚙️ 更新依赖版本
-- ⚙️ 依赖 `@types/node` 由 `25.x` -> `26.x`
