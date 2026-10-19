@@ -8,3 +8,4 @@ zip
 cache
 package-lock.json
 temp
+*.local

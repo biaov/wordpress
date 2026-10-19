@@ -24,10 +24,7 @@ createApp(App).use(MeGuide).mount('#app')
 - 通过属性 `visible` 来设置组件的显示和隐藏，默认为 false。
 
 ```vue
-<me-guide
-  visible
-  :list="['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1']"
-/>
+<me-guide visible :list="['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1']" />
 ```
 
 ### 自定义开启
@@ -39,10 +36,7 @@ createApp(App).use(MeGuide).mount('#app')
 import { useVisible } from 'mine-h5-ui'
 
 const [visible, setVisible] = useVisible()
-const list = Object.freeze([
-  'https://dummyimage.com/750x1334/f60/fff&text=1',
-  'https://dummyimage.com/750x1334/f60/fff&text=1'
-])
+const list = Object.freeze(['https://dummyimage.com/750x1334/f60/fff&text=1', 'https://dummyimage.com/750x1334/f60/fff&text=1'])
 </script>
 
 <template>

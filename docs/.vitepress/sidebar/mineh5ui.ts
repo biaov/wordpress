@@ -1,8 +1,8 @@
 import { resolve } from 'path'
 import type { DefaultTheme } from 'vitepress'
-import { getTitle } from '../../utils'
-import mineh5ui from './mineh5ui.json'
-import type { ConfigItem } from '../../types'
+import { getTitle } from '../../utils.ts'
+import mineh5ui from './mineh5ui.json' with { type: 'json' }
+import type { ConfigItem } from '../../types.ts'
 
 const config: ConfigItem[] = mineh5ui
 

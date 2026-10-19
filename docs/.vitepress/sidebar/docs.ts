@@ -1,8 +1,8 @@
 import { readdirSync } from 'fs'
 import { resolve } from 'path'
 import type { DefaultTheme } from 'vitepress'
-import { getTitle } from '../../utils'
-import type { ConfigItem } from '../../types'
+import { getTitle } from '../../utils.ts'
+import type { ConfigItem } from '../../types.ts'
 
 export default (item: Required<Pick<ConfigItem, 'text' | 'link'>>) => {
   const config: DefaultTheme.SidebarItem[] = []

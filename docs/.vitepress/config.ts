@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { resolve } from 'path'
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-import { search } from './search'
-import sidebar from './sidebar'
+import { search } from './search.ts'
+import sidebar from './sidebar/index.ts'
 
 export default defineConfig({
   title: 'WordPress',

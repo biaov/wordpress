@@ -1,6 +1,6 @@
 {
   "name": "wordpress",
-  "version": "3.11.0",
+  "version": "3.11.1",
   "description": "一个基于 `vitepress` 搭建的个人博客 👍",
   "scripts": {
     "start": "npm run dev",
@@ -40,7 +40,7 @@
     "@types/node": "^26.2.0",
     "prettier": "^3.9.6",
     "strip-json-comments": "^5.0.3",
-    "vitepress": "^1.6.4",
-    "vitepress-plugin-group-icons": "^1.7.6"
+    "vitepress": "^2.0.0-alpha.20",
+    "vitepress-plugin-group-icons": "^1.8.1"
   }
 }

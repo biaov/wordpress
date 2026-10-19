@@ -1,9 +1,10 @@
 import { cpSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { join, resolve } from 'path'
+import { loadEnv } from 'vite'
 import { format } from './prettier.js'
 
 const { dirname } = import.meta
-const mineh5uiProject = resolve(dirname, '../../mine-h5-ui/v2/examples')
+const { VITE_MINEH5UI_DIR } = loadEnv('development', resolve(dirname, '../'))
 
 /**
  * 标题转路径
@@ -22,7 +23,7 @@ const titleToPath = title => {
 const cpConfig = async () => {
   const navConfigName = 'routes.json'
   const tempConfigPath = `../temp/${navConfigName}`
-  cpSync(resolve(mineh5uiProject, `config/${navConfigName}`), resolve(dirname, tempConfigPath))
+  cpSync(resolve(VITE_MINEH5UI_DIR, `config/${navConfigName}`), resolve(dirname, tempConfigPath))
   const { default: config } = await import(tempConfigPath, { with: { type: 'json' } })
   const mineh5ui = Object.entries(config).map(([key, value]) => {
     let items
@@ -61,7 +62,7 @@ const replacePath = path => {
  */
 const cpDocs = () => {
   const output = resolve(dirname, '../docs/mine-h5-ui')
-  const input = resolve(mineh5uiProject, 'docs')
+  const input = resolve(VITE_MINEH5UI_DIR, 'docs')
 
   cpSync(input, output, { recursive: true })
   replacePath(output)
