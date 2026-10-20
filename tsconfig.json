@@ -10,7 +10,6 @@
     "lib": ["ESNext"],
     "skipLibCheck": true,
     "types": ["node"],
-    "baseUrl": "./",
 
     /* 模块解析策略 */
     "moduleResolution": "Bundler",

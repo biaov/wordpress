@@ -23,7 +23,6 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     socialLinks: [{ icon: 'github', link: 'https://github.com/biaov/wordpress' }],
-    lastUpdatedText: '更新时间',
     nav: [
       {
         text: '首页',
