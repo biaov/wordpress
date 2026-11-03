@@ -40,9 +40,8 @@ createApp(App).use(MeVirtualList).mount('#app')
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { Random } from 'mockjs'
 
-const listData = ref(Array.from({ length: 100 }, () => ({ text: Random.cword(6, 14) })))
+const listData = ref(Array.from({ length: 100 }, (_, index) => ({ text: `第 ${index + 1} 条虚拟列表数据` })))
 </script>
 <style lang="less" scoped>
 .item {
@@ -72,7 +71,6 @@ const listData = ref(Array.from({ length: 100 }, () => ({ text: Random.cword(6, 
 ```vue
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { Random } from 'mockjs'
 
 /**
  * 状态文本
@@ -87,7 +85,7 @@ const loadStatus = ref('more')
 /**
  * 生成数组
  */
-const createArr = (min = 6, max = 14) => Array.from({ length: 100 }, () => ({ text: Random.cword(min, max) }))
+const createArr = (start = 0, count = 100) => Array.from({ length: count }, (_, index) => ({ text: `第 ${start + index + 1} 条数据` }))
 const listData = createArr()
 
 /**
@@ -155,12 +153,11 @@ const onLoadMore = () => {
 ```vue
 <script>
 import { ref } from 'vue'
-import { Random } from 'mockjs'
 
 /**
  * 列表数据
  */
-const listData = ref(Array.from({ length: 100 }, () => ({ text: Random.cword(14, 50) })))
+const listData = ref(Array.from({ length: 100 }, (_, index) => ({ text: `第 ${index + 1} 条自适应高度数据` })))
 </script>
 
 <template>
